@@ -5,8 +5,8 @@
 }
 
 body{
+    /*credit: image is from https://unsplash.com/photos/cfKC0UOZHJo*/
     background-image: url("../images/background.jpg");
-/*credit: image is from https://unsplash.com/photos/cfKC0UOZHJo*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,16 +50,23 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
     height: 100%;
 }
 
-/*---EXPLORE---*/
+/*---EXPLORE INTRO---*/
 .jumbotron{
     background-color: transparent;
     text-align: center;
-    margin: 2rem;
 }
 
 .jumbotron h2{
     color: #484848;
     text-shadow: 2px 2px rgb(148, 145, 145);
-
 }
 
+/*---EXPLORE TAB---*/
+.tab a {
+    color: #484848;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .tab a{
+    color: #484848;
+    background-color: rgba(255, 255, 255, 0.562);
+}
