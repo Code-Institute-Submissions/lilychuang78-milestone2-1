@@ -16,12 +16,12 @@
 </head>
 
 <body>
-	<!--navbar-->
-	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+	<!--NAVBAR STARTS HERE-->
+	<nav class="navbar navbar-expand-lg sticky-top navbar-bg">
 		<a class="navbar-brand nav-text" href="#top">#DiscoverTaiwan</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <span class="navbar-toggler-icon "></span>
+        </button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
@@ -36,40 +36,45 @@
 			</ul>
 		</div>
 	</nav>
-	<!--navbar end here-->
+	<!--NAVBAR ENDS HERE-->
 
-<!--SLIDESHOW START HERE-->
-<!--credit: https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/-->
-<!--credit: images are from https://unsplash.com/-->
-<section id="top">
-	<div id="slideshow home">
-		<div class="img-case">
-			<img src="assets/images/1.jpg" alt="Taipei 101" />
+    <!--SLIDESHOW STARTS HERE-->
+    <!--credit: https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/-->
+    <!--credit: images are from https://unsplash.com/-->
+    <section id="top">
+        <div class="slideshow" id="home" >
+            <div class="img-case">
+                <img src="assets/images/1.jpg" class="img-fluid" alt="Taipei 101" />
+            </div>
+            <div class="img-case">
+                <img src="assets/images/2.jpg" class="img-fluid" alt="East coast line" />
+            </div>
+            <div class="img-case">
+                <img src="assets/images/3.jpg" class="img-fluid" alt="Road in the mountain" />
+            </div>
+            <div class="img-case">
+                <img src="assets/images/4.jpg" class="img-fluid" alt="Night market" />
+            </div>
         </div>
-		<div class="img-case">
-			<img src="assets/images/2.jpg" alt="East coast line" />
-        </div>
-		<div class="img-case">
-		    <img src="assets/images/3.jpg" alt="Road in the mountain" />
-        </div>
-		<div class="img-case">
-			<img src="assets/images/4.jpg" alt="Night market" />
-        </div>
-	</div>
-<section>
-<!--SLIDESHOW END HERE-->
+    </section>
+<!--SLIDESHOW ENDS HERE-->
 
-<section id="explore">
-</section>
+<!--EXPLORE SECTION STARTS HERE-->
+    <section class="container-fluid" id="explore">
+        <div class="jumbotron">
+            <h2 class="mb-5">Explore Taiwan</h2>
+            <p class= "mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat</p>
+        </div>
+    </section>
+<!--EXPLORE SECTION ENDS HERE-->
 
-					<footer>
-					</footer>
-					<script defer
-						src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap">
-					</script>
-					<script src="assets/js/slideshow.js"></script>
-					<script src="assets/js/map.js"> </script>
-					<script src="assets/js/email.js"> </script>
+
+    <footer>
+    </footer>
+    <script defer src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap"></script>
+    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/email.js"></script>
+
 </body>
-
 </html>
