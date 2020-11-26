@@ -4,18 +4,43 @@
 	font-size: 16px;
 }
 
+body{
+    background-image: url("../images/jumbotron-bg.jpg");
+/*credit: image is from https://unsplash.com/photos/cfKC0UOZHJo*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /*---NAVBAR---*/
+
+.navbar-bg{
+    background-image: url("../images/jumbotron-bg.jpg");
+}
+
+.navbar{
+    height: 5rem;
+}
 .nav-text {
-    color: white;
+    color: #484848;
+}
+
+.navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=484848');
 }
 
 /*---SLIDESHOW---*/
-#slideshow { 
-    position: relative;
+.slideshow { 
+  position: relative;
+  height: 30rem;
 }
 
 .img-case { 
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
   width: 100%;
   height: 30rem;
@@ -25,3 +50,17 @@
     width: 100%;
     height: 100%;
 }
+
+/*---EXPLORE---*/
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+    margin: 2rem;
+}
+
+.jumbotron h2{
+    color: #484848;
+    text-shadow: 2px 2px rgb(148, 145, 145);
+
+}
+
