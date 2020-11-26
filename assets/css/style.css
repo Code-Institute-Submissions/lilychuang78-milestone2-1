@@ -13,11 +13,8 @@ body{
 }
 
 /*---NAVBAR---*/
-
 .navbar-bg{
-    background-image: url("../images/background.jpg");
-/*credit: image is from https://unsplash.com/photos/cfKC0UOZHJo*/
-
+    background-color: rgba(255, 255, 255, 0.562);
 }
 
 .navbar{
