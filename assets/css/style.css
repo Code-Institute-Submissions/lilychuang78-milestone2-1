@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("../images/jumbotron-bg.jpg");
+    background-image: url("../images/background.jpg");
 /*credit: image is from https://unsplash.com/photos/cfKC0UOZHJo*/
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +15,9 @@ body{
 /*---NAVBAR---*/
 
 .navbar-bg{
-    background-image: url("../images/jumbotron-bg.jpg");
+    background-image: url("../images/background.jpg");
+/*credit: image is from https://unsplash.com/photos/cfKC0UOZHJo*/
+
 }
 
 .navbar{
