@@ -12,13 +12,14 @@ body{
     background-size: cover;
 }
 
+
 /*---NAVBAR---*/
 .navbar-bg{
     background-color: rgba(255, 255, 255, 0.562);
 }
 
 .navbar{
-    height: 5rem;
+    height: 3rem;
 }
 .nav-text {
     color: #484848;
@@ -42,7 +43,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
   right: 0;
   overflow: hidden;
   width: 100%;
-  height: 30rem;
+  height: 33rem;
 }
 
 .img-case img{
@@ -51,8 +52,13 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 }
 
 /*---EXPLORE INTRO---*/
+.explore-container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .jumbotron{
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
 }
 
@@ -65,8 +71,14 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 .tab a {
     color: #484848;
 }
-
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .tab a{
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #484848;
-    background-color: rgba(255, 255, 255, 0.562);
+    background-color:rgba(255, 255, 255, 0.4);
+}
+
+.location-img{
+    width: 70%;
+}
+.language-img {
+    width: 60%;
 }
