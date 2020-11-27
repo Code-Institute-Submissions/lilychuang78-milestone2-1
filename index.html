@@ -10,7 +10,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Discover Taiwan</title>
 </head>
@@ -24,14 +25,17 @@
          </button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link nav-text" href="#top">Home</a>
+				<li class="nav-item">
+					<a class="nav-link nav-text" href="#info">Info</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-text" href="#info">Explore</a>
+					<a class="nav-link nav-text" href="#attraction">Attraction</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-text" href="#">Contact</a>
+					<a class="nav-link nav-text" href="#cuisine">Cuisine</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-text" href="#contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -42,61 +46,59 @@
 	<section id="top">
 		<div id="slideshow">
 			<div class="img-case">
-                <!--credit: images are from https://unsplash.com/photos/au3CYbd7vCU/-->
+				<!--credit: images are from https://unsplash.com/photos/au3CYbd7vCU/-->
 				<img src="assets/images/Taipei_101.jpg" class="img-fluid" alt="Taipei 101" />
             </div>
-			<div class="img-case">
-            	<!--credit: images are from https://unsplash.com/photos/WPmDmxiI6IA-->
-				<img src="assets/images/coastline.jpg" class="img-fluid" alt="East coast line" />
+				<div class="img-case">
+					<!--credit: images are from https://unsplash.com/photos/WPmDmxiI6IA-->
+					<img src="assets/images/coastline.jpg" class="img-fluid" alt="East coast line" />
             </div>
-			<div class="img-case">
-                <!--credit: images are from https://unsplash.com/photos/L6xHmv2R3G4-->
-				<img src="assets/images/mountain_road.jpg" class="img-fluid" alt="a small road on a mountain" />
+					<div class="img-case">
+						<!--credit: images are from https://unsplash.com/photos/L6xHmv2R3G4-->
+						<img src="assets/images/mountain_road.jpg" class="img-fluid" alt="a small road on a mountain" />
             </div>
-			<div class="img-case">
-                <!--credit: images are from https://unsplash.com/photos/6rEPAbrXNaY-->
-				<img src="assets/images/nightmarket.jpg" class="img-fluid" alt="Night market" />
+						<div class="img-case">
+							<!--credit: images are from https://unsplash.com/photos/6rEPAbrXNaY-->
+							<img src="assets/images/nightmarket.jpg" class="img-fluid" alt="Night market" />
             </div>
-		</div>
+						</div>
 	</section>
 	<!--SLIDESHOW ENDS HERE-->
-
 	<!--EXPLORE INTRO STARTS HERE-->
 	<div id="info"></div>
 	<section class="container-fluid explore-container">
 		<div class="jumbotron mb-0">
-			<h2 class="mb-3 mt-3">Discover#Taiwan</h2>
+			<h1 class="mb-3 mt-3">Discover#Taiwan</h1>
 			<p class="mx-5 mt-4">
 				This website is dedicated to introducing Taiwan to everyone.<br>
-                Taiwan is a country rich with its diverse cultures and friendly people.<br>
-                We have a female president, transgener IT misiter and legal homosexual marriage.<br>
-                Are you curious about this interesting country?<br>
-                Click a tab below to find more information.<br>
+               Taiwan is a country rich with its diverse cultures and friendly people.<br>
+               We have a female president, transgener IT misiter and legal homosexual marriage.<br>
+               Are you curious about this interesting country?<br>
+               Click a tab below to find more information.<br>
             </p>
 		</div>
 	</section>
 	<!--EXPLORE INTRO ENDS HERE-->
-
 	<!--EXPLORE TAB STRATS HERE-->
 	<section class="container-fluid">
-		<ul class="nav nav-tabs nav-justified mx-5">
+		<ul class="nav nav-tabs nav-justified mx-5 mb-5">
 			<li class="nav-item tab">
-				<a href="#location" class="nav-link active" data-toggle="tab">Location</a>
+				<a href="#location" class="nav-link active" data-toggle="tab"><strong>Location</strong></a>
 			</li>
 			<li class="nav-item tab">
-				<a href="#climate" class="nav-link" data-toggle="tab">Climate</a>
+				<a href="#climate" class="nav-link" data-toggle="tab"><strong>Climate</strong></a>
 			</li>
 			<li class="nav-item tab">
-				<a href="#population" class="nav-link" data-toggle="tab">Population</a>
+				<a href="#population" class="nav-link" data-toggle="tab"><strong>Population</strong></a>
 			</li>
 			<li class="nav-item tab">
-				<a href="#language" class="nav-link" data-toggle="tab">Language</a>
+				<a href="#language" class="nav-link" data-toggle="tab"><strong>Language</strong></a>
 			</li>
 			<li class="nav-item tab">
-				<a href="#culture" class="nav-link" data-toggle="tab">Culture</a>
+				<a href="#culture" class="nav-link" data-toggle="tab"><strong>Culture</strong></a>
 			</li>
 			<li class="nav-item tab">
-				<a href="#business" class="nav-link" data-toggle="tab">Business</a>
+				<a href="#business" class="nav-link" data-toggle="tab"><strong>Business</strong></a>
 			</li>
 		</ul>
 		<div class="tab-content mx-5">
@@ -106,10 +108,9 @@
 					<div class="row my-4">
 						<div class="col-md-4 mx-auto my-auto">
 							<!--credit: image is from https://snappygoat.com/s/?q=bestof%3A1655+Map+of+Formosa+%28Taiwan%29+and+Surrounding+Countries+by+Italian+Missionary+%E7%BE%A9%E5%A4%A7%E5%88%A9%E4%BA%BA%E6%89%80%E7%B9%AA%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E8%87%BA%E7%81%A3%E8%88%87%E5%91%A8%E9%82%8A%E5%9C%8B%E5%AE%B6.jpg+zh-tw+%E7%BE%A9%E5%A4%A7%E5%88%A9%E8+%B6%E7%A9%8C%E6#cda9bc9172b0b4d398a1c6b8f208b6f67670e7e7,0,168.-->
-							<img src='assets/images/formosa.jpg' class="img-fluid img-thumbnail mx-auto d-block location-img"
-                           alt="countries in East Asia map" />
+							<img src='assets/images/formosa.jpg' class="img-fluid img-thumbnail mx-auto d-block mt-3 location-img" alt="countries in East Asia map" />
                      </div>
-							<div class="col-md-6 mx-auto my-3">
+							<div class="col-md-6 mx-auto my-3 tab-text">
 								<h3>Location:</h3>
 								<!--credit: information taken from https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E5%9C%B0%E7%90%86#%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE-->
 								<p class="mx-auto">Taiwan is located in the eastern part of Asia, at the intersection of
@@ -128,7 +129,6 @@
 					</div>
 				</div>
 				<!--LOCATION TAB ENDS HERE-->
-
 				<!--CLIMATE TAB STARTS HERE-->
 				<div class="tab-pane fade" id="climate">
 					<div class="container-fluid">
@@ -136,9 +136,9 @@
 							<div class="col-md-4 mx-auto my-auto">
 								<!--credit: image is from https://spectralcodex.com/south-taiwan-ride-2015-dawu-to-taitung-city/-->
 								<img src='assets/images/taiwan-south-ride.jpg' class="img-fluid img-thumbnail mx-auto d-block"
-                                    alt="typical tropical view in Taiwan" />
-                            </div>
-								<div class="col-md-6 mx-auto my-3">
+                           alt="typical tropical view in Taiwan" />
+                     </div>
+								<div class="col-md-6 mx-auto my-3 tab-text">
 									<h3>Climate:</h3>
 									<!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%B0%A3%E5%80%99-->
 									<p class="mx-auto">The climate of Taiwan Island has a subtropical monsoon climate to
@@ -158,17 +158,15 @@
 						</div>
 					</div>
 					<!--CLIMATE TAB ENDS HERE-->
-
 					<!--POPULATION TAB STARTS HERE-->
 					<div class="tab-pane fade" id="population">
 						<div class="container-fluid">
 							<div class="row my-4">
 								<div class="col-md-4 mx-auto my-auto">
 									<!--credit: image is from https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.-->
-									<img src='assets/images/Taiwan_population_density_map.png' class="img-fluid img-thumbnail mx-auto d-block"
-                           alt="population density map of Taiwan" />
+									<img src='assets/images/Taiwan_population_density_map.png' class="img-fluid img-thumbnail mx-auto d-block" alt="population density map of Taiwan" />
                      </div>
-									<div class="col-md-6 mx-auto my-3">
+									<div class="col-md-6 mx-auto my-3 tab-text">
 										<h3>Population:</h3>
 										<!--credit: information taken from https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.-->
 										<p class="mx-auto">The population of Taiwan is approximately 23.57 million,
@@ -176,19 +174,19 @@
 											about 36,000 km2; it is the seventeenth most densely populated country in
 											the world, with a population density of about 651 inhabitants per square
 											kilometer.<br>
-											The original population of the island of Taiwan and its
-											associated islands consists of a variety of Taiwanese indigenous
-											peoples.They have been found to share languages with the
-											Austronesian family and mitochondrial DNA contribution with island peoples
-											of Southeast Asia and the Pacific.<br>
-											Immigration of Han Chinese to the Penghu islands started as early as the
-											13th century, while settlement of the main island occurred from the 16th
-											century. It was stimulated by Dutch traders importing workers from Fujian in
-											the 17th century. According to governmental statistics, in the early 21st
-											century, more than 95% of the Republic of China's population are Han Chinese
-											of East Asian ethnicity, while 2.3% are Taiwanese aborigines of Austronesian
-											ethnicity. 85% of Taiwanese have some level of aboriginal ancestry.
-										</p>
+                           The original population of the island of Taiwan and its
+                           associated islands consists of a variety of Taiwanese indigenous
+                           peoples.They have been found to share languages with the
+                           Austronesian family and mitochondrial DNA contribution with island peoples
+                           of Southeast Asia and the Pacific.<br>
+                           Immigration of Han Chinese to the Penghu islands started as early as the
+                           13th century, while settlement of the main island occurred from the 16th
+                           century. It was stimulated by Dutch traders importing workers from Fujian in
+                           the 17th century. According to governmental statistics, in the early 21st
+                           century, more than 95% of the Republic of China's population are Han Chinese
+                           of East Asian ethnicity, while 2.3% are Taiwanese aborigines of Austronesian
+                           ethnicity. 85% of Taiwanese have some level of aboriginal ancestry.
+                        </p>
 											<footer class="blockquote-footer">Information taken from <a
 													href="https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.">wikipedia</a>
 											</footer>
@@ -197,32 +195,30 @@
 							</div>
 						</div>
 						<!--POPULATION TAB ENDS HERE-->
-
 						<!--LANGUAGE TAB STARTS HERE-->
 						<div class="tab-pane fade" id="language">
 							<div class="container-fluid">
 								<div class="row my-4">
 									<div class="col-md-4 mx-auto my-auto">
 										<!--credit: image is from https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E9%9F%B3%E5%AD%97%E6%AF%8D.jpg-->
-										<img src='assets/images/language.jpg' class="img-fluid img-thumbnail mx-auto d-block language-img"
-                           alt="different written languages in Taiwan" />
+										<img src='assets/images/language.jpg' class="img-fluid img-thumbnail mx-auto d-block language-img" alt="different written languages in Taiwan" />
                      </div>
-										<div class="col-md-6 mx-auto my-3">
+										<div class="col-md-6 mx-auto my-3 tab-text">
 											<h3>Language:</h3>
 											<!--credit: information taken from https://en.wikipedia.org/wiki/Languages_of_Taiwan-->
 											<p class="mx-auto">The languages of Taiwan consist of several varieties of
 												languages under families of Austronesian languages and Sino-Tibetan
 												languages spoken in Taiwan.<br>
-												Researches on historical linguistics
-												recognize Taiwan as the homeland of the whole Austronesian languages
-												family owing to the highest internal variety of the Formosan
-												languages.<br>
-												In the last 400 years, several waves of Chinese emigrations brought
-												several different Sino-Tibetan languages into Taiwan. These languages
-												include traditional Mandarin known as the national language, Taiwanese
-												Hokkien,
-												spoken by about 70% of the population and Hakka in Taiwan.
-											</p>
+                           Researches on historical linguistics
+                           recognize Taiwan as the homeland of the whole Austronesian languages
+                           family owing to the highest internal variety of the Formosan
+                           languages.<br>
+                           In the last 400 years, several waves of Chinese emigrations brought
+                           several different Sino-Tibetan languages into Taiwan. These languages
+                           include traditional Mandarin known as the national language, Taiwanese
+                           Hokkien,
+                           spoken by about 70% of the population and Hakka in Taiwan.
+                        </p>
 												<footer class="blockquote-footer">Information taken from <a
 														href="https://en.wikipedia.org/wiki/Languages_of_Taiwan">wikipedia</a>
 												</footer>
@@ -231,7 +227,6 @@
 								</div>
 							</div>
 							<!--LANGUAGE TAB ENDS HERE-->
-
 							<!--CULTURE TAB STARTS HERE-->
 							<div class="tab-pane fade" id="culture">
 								<div class="container-fluid">
@@ -241,7 +236,7 @@
 											<img src='assets/images/temple.jpg' class="img-fluid img-thumbnail mx-auto d-block"
                            alt="picture of a temple at night" />
                      </div>
-											<div class="col-md-6 mx-auto my-3">
+											<div class="col-md-6 mx-auto my-3 tab-text">
 												<h3>Culture:</h3>
 												<!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%96%87%E5%8C%96-->
 												<p class="mx-auto">Taiwan's culture presents multifacetedly in different
@@ -275,7 +270,6 @@
 									</div>
 								</div>
 								<!--CULTURE TAB ENDS HERE-->
-
 								<!--BUSINESS TAB STARTS HERE-->
 								<div class="tab-pane fade" id="business">
 									<div class="container-fluid">
@@ -284,11 +278,11 @@
 												<!--credit: image is from https://unsplash.com/photos/gZetDri2mXo-->
 												<img src='assets/images/streetview.jpg' class="img-fluid img-thumbnail mx-auto d-block" alt="countries in East Asia map" />
                      </div>
-												<div class="col-md-6 mx-auto my-3">
+												<div class="col-md-6 mx-auto my-3 tab-text">
 													<h3>Business:</h3>
 													<!--credit: information taken from
-                                                        https://international.thenewslens.com/article/124421 and
-                                                        https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan-->
+                           https://international.thenewslens.com/article/124421 and
+                           https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan-->
 													<p class="mx-auto">Taiwan maintains a stable industrial economy as a
 														result of rapid economic growth and industrialization. The
 														21st-largest economy in the world, its high-tech industry
@@ -309,8 +303,9 @@
 													<footer class="blockquote-footer">Information taken from <a
 															href="https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan">wikipedia</a>
 													</footer>
-                                                    <footer class="blockquote-footer">Information taken from <a
-															href="https://international.thenewslens.com/article/124421">The News Lens</a>
+													<footer class="blockquote-footer">Information taken from <a
+															href="https://international.thenewslens.com/article/124421">The
+															News Lens</a>
 													</footer>
 												</div>
 											</div>
@@ -319,8 +314,30 @@
 									<!--BUSINESS TAB ENDS HERE-->
 								</div>
 	</section>
-
 	<!--EXPLORE TAB ENDS HERE-->
+
+	<!--ATTRACTION SECTION STARTS HERE-->
+	<!--put google map api here-->
+	<!--ATTRACTION SECTION ENDS HERE-->
+
+
+	<!--CUISINE SECTION STARTS HERE-->
+	<section id="cuisine" class="container-fluid cuisine-container">
+		<div class="header">
+			<div class="text-center article">
+				<h3>Taiwanese Cuisine</h3>
+				<p>Taiwanese cuisine in a broad sense refers to dishes created in Taiwan or in a narrow sense it is
+					limited to traditional Taiwanese southern Hokkien dishes. Although similar to traditional Chinese
+					cuisine, the very same ingredients are not available in Taiwan. Along time the local cuisine has
+					developed into a variety of innovative cuisines influenced by Fujian, Hakka, Aboriginal people,
+					other provinces of China, Japanese and many other foreign countries. The world-famous beef noodles
+					and bubble milk tea were evolved and born in this island.</p>
+			</div>
+		</div>
+
+
+	</section>
+	<!--CUISINE SECTION ENDS HERE-->
 	<footer>
 	</footer>
 	<script defer
