@@ -30,7 +30,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 }
 
 /*---SLIDESHOW---*/
-.slideshow { 
+#slideshow { 
   position: relative;
   height: 30rem;
 }
