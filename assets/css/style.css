@@ -138,30 +138,19 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 
 /*---CUISINE IMAGES---*/
 .cuisine-img-container{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem 2rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.cuisine-img-container .img-box{
-    margin: 0.7rem;
-    width: 15rem;
+.cuisine-img-container p{
+    margin: 0 auto;
+}
+
+.cuisine-img-container img{
+    margin: 1rem 1rem;
+    width: 10rem;
     position: relative;
 }
-
-.cuisine-img-container .img-box img{
-    border-radius: 2%;
-    filter: brightness(75%);
-}
-
-.cuisine-name{
-    display: none;
-    text-align: center;
-    font-weight: 900;
-    font-size: 1.3rem;
-}
-
-
