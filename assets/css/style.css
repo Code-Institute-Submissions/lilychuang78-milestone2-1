@@ -147,13 +147,13 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 
 .cuisine-img-container .img-box{
     margin: 0.7rem;
-    width: 12rem;
+    width: 15rem;
     position: relative;
 }
 
 .cuisine-img-container .img-box img{
     border-radius: 2%;
-    filter: brightness(50%);
+    filter: brightness(75%);
 }
 
 .cuisine-name{
@@ -161,6 +161,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
     text-align: center;
     font-family: 'Inconsolata', monospace;
     font-weight: 900;
+    font-size: 1.3rem;
 }
 
 

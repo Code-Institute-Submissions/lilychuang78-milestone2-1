@@ -9,10 +9,10 @@ function smaller(){
 
 $('.pop').hover(after, before);
 function after(){
-    $(this).css({filter: 'none'});
+    $(this).css({filter: 'brightness(120%)', transition: '1s'});
 }
 function before(){
-    $(this).css({filter: 'brightness(50%)'});
+    $(this).css({filter: 'brightness(70%)', transition: '1s'});
 }
 
 $(document).ready(function(){
