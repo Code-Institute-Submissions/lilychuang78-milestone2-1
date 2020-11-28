@@ -17,8 +17,8 @@ function before(){
 
 $(document).ready(function(){
     $(".pop").hover(function() {
-    $('.cuisine-name').show('1500')
+    $('.cuisine-name').fadeIn('slow')
 },function() {
-    $('.cuisine-name').hide('')
+    $('.cuisine-name').fadeOut('slow')
     });  
 });
