@@ -43,7 +43,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 /*---SLIDESHOW---*/
 #slideshow { 
   position: relative;
-  height: 20rem;
+  height: 33rem;
 }
 
 .img-case { 
@@ -64,7 +64,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 
 /*---EXPLORE INTRO---*/
 .explore-container{
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
@@ -126,7 +126,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
     height: 100%;
     position: absolute;
     padding: 3rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(100, 98, 98, 0.5);
     overflow: scroll;
     -ms-overflow-style: none;  /*hide scrollbar for IE*/
     scrollbar-width: none;  /*hide scrollbar for Firefox */
@@ -138,7 +138,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 
 /*---CUISINE IMAGES---*/
 .cuisine-img-container{
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -147,7 +147,20 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 
 .cuisine-img-container .img-box{
     margin: 0.7rem;
-    width: 20rem;
-    height: 20rem;
-    background: white;
+    width: 12rem;
+    position: relative;
 }
+
+.cuisine-img-container .img-box img{
+    border-radius: 2%;
+    filter: brightness(50%);
+}
+
+.cuisine-name{
+    display: none;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+}
+
+
