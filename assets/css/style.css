@@ -126,7 +126,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
     height: 100%;
     position: absolute;
     padding: 3rem;
-    background: rgba(100, 98, 98, 0.5);
+    background: rgba(255, 255, 255, 0.4);
     overflow: scroll;
     -ms-overflow-style: none;  /*hide scrollbar for IE*/
     scrollbar-width: none;  /*hide scrollbar for Firefox */
@@ -139,6 +139,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 /*---CUISINE IMAGES---*/
 .cuisine-img-container{
     margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -159,7 +160,6 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=4848
 .cuisine-name{
     display: none;
     text-align: center;
-    font-family: 'Inconsolata', monospace;
     font-weight: 900;
     font-size: 1.3rem;
 }
