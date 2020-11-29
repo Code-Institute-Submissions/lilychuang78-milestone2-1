@@ -96,12 +96,10 @@ padding-top: 1rem;
 padding-bottom: 1rem;
 border-radius: 2%;
 }
+
+/*---LOCATION---*/
 .location-img{
 width: 70%;
-}
-
-.language-img {
-width: 60%;
 }
 
 .map-container{
@@ -112,6 +110,112 @@ height: 23rem;
 #map1 {
 height: 100%;
 border-radius: 2%;
+}
+
+/*---CLIMATE---*/
+/*---credit: inspired by https://codepen.io/tutsplus/details/gObLaEP---*/
+.top-banner h4 {
+    padding-left: 3rem;
+}
+.top-banner form {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+}
+
+.top-banner form input {
+    margin: 1rem;
+  font-size: 1rem;
+  height: 2rem;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+
+.top-banner form input::placeholder {
+  color: currentColor; 
+}
+
+.top-banner form button {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.3rem;
+  margin-left: 15px;
+  border-radius: 2%;
+  transition: background 0.3s ease-in-out;
+}
+
+.top-banner form button:hover {
+  background: var(--darkred);
+}
+
+.top-banner form .msg {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  max-width: 450px;
+  min-height: 40px;
+}
+
+.ajax-section {
+  margin: 1rem;
+}
+
+.ajax-section .cities {
+  display: grid;
+  grid-gap: 2rem 1rem;
+}
+
+.ajax-section .city {
+  position: relative;
+  border-radius: 2%;
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+
+.ajax-section .city::after {
+  content: '';
+  width: 90%;
+  height: 3rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 2%;
+}
+
+.ajax-section figcaption {
+  text-transform: uppercase;
+}
+
+.ajax-section .city-temp {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.ajax-section .city sup {
+  font-size: 1rem;
+}
+
+.ajax-section .city-name span {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.ajax-section .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 50%;
+  background: white;
+}
+
+.ajax-section .city-icon {
+  width: 5rem;
+}
+/*---credit ends---*/
+
+.language-img {
+width: 60%;
 }
 
 /*---CUISINE---*/

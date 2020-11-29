@@ -137,10 +137,24 @@
                 <div class="tab-pane fade" id="climate">
                 <div class="container-fluid">
                     <div class="row my-4">
-                            <div class="col-md-4 mx-auto my-auto">
-                                <!--credit: image is from https://spectralcodex.com/south-taiwan-ride-2015-dawu-to-taitung-city/-->
-                                <img src='assets/images/taiwan-south-ride.jpg' class="img-fluid img-thumbnail mx-auto d-block"
-                                alt="typical tropical view in Taiwan" />
+                            <div class="col-md-6 mx-auto my-auto">
+                                <!--WEATHER API STARTS-->
+                                <section class="top-banner">
+                                    <div class="container-fluid">
+                                        <h4 class="mx-5">Check the Weather</h1>
+                                        <form class="mx-5">
+                                        <input type="text" placeholder="enter a city, like Taipei..." autofocus>
+                                        <button type="submit">ENTER</button>
+                                        <span class="msg"></span>
+                                        </form>
+                                    </div>
+                                    </section>
+                                    <section class="ajax-section">
+                                    <div class="container">
+                                        <ul class="cities"></ul>
+                                    </div>
+                                </section>
+                                <!--WEATHER API ENDS-->
                             </div>
                             <div class="col-md-6 mx-auto my-3 tab-text">
                                 <h3>Climate:</h3>
@@ -403,6 +417,7 @@
 				src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap">
 			</script>
 			<script src="assets/js/maps.js"> </script>
+            <script src="assets/js/weather.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </body>
 </html>
