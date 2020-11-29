@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
 
       <title>#DiscoverTaiwan</title>
    </head>
@@ -108,9 +110,9 @@
                 <div class="tab-pane fade show active" id="location">
                 <div class="container-fluid">
                     <div class="row my-4">
-                            <div class="col-md-4 mx-auto my-auto">
-                                <!--credit: image is from https://snappygoat.com/s/?q=bestof%3A1655+Map+of+Formosa+%28Taiwan%29+and+Surrounding+Countries+by+Italian+Missionary+%E7%BE%A9%E5%A4%A7%E5%88%A9%E4%BA%BA%E6%89%80%E7%B9%AA%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E8%87%BA%E7%81%A3%E8%88%87%E5%91%A8%E9%82%8A%E5%9C%8B%E5%AE%B6.jpg+zh-tw+%E7%BE%A9%E5%A4%A7%E5%88%A9%E8+%B6%E7%A9%8C%E6#cda9bc9172b0b4d398a1c6b8f208b6f67670e7e7,0,168.-->
-                                <img src='assets/images/formosa.jpg' class="img-fluid img-thumbnail mx-auto d-block mt-3 location-img" alt="countries in East Asia map" />
+                            <div class="col-md-4 mx-auto my-auto map-container">
+                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
+                                <div id="map1" class="d-block"></div>
                             </div>
                             <div class="col-md-6 mx-auto my-3 tab-text">
                                 <h3>Location:</h3>
@@ -397,7 +399,10 @@
         <footer>
         </footer>
         <script src="assets/js/slideshow.js"></script>
-        <!--<script src="assets/js/popup.js"></script>-->
+        <script defer
+				src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap">
+			</script>
+			<script src="assets/js/maps.js"> </script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </body>
 </html>
