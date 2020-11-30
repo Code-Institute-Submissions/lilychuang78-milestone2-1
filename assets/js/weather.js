@@ -1,5 +1,6 @@
-/*SEARCH BY USING A CITY NAME (e.g. athens) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. athens,gr)*/
+//credit:
 //https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
+//https://codepen.io/tutsplus/details/gObLaEP
 const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
@@ -19,7 +20,10 @@ form.addEventListener("submit", e => {
       const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
         weather[0]["icon"]
       }.svg`;
-
+      console.log(main)
+      console.log(name)
+      console.log(sys)
+      console.log(weather)
       const li = document.createElement("li");
       li.classList.add("city");
       const markup = `
@@ -36,10 +40,11 @@ form.addEventListener("submit", e => {
         </figure>
       `;
       li.innerHTML = markup;
+      list.innerHTML = "" //clear the result before appending
       list.appendChild(li);
     })
     .catch(() => {
-      msg.textContent = "Please enter a valid city";
+      msg.textContent = "Please enter a valid city.";
     });
 
   msg.textContent = "";

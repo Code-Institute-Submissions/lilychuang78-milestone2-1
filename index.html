@@ -137,26 +137,24 @@
                 <div class="tab-pane fade" id="climate">
                 <div class="container-fluid">
                     <div class="row my-4">
-                            <div class="col-md-6 mx-auto my-auto">
+                            <div class="col-md-4 container-fluid climate-container mt-3">
                                 <!--WEATHER API STARTS-->
-                                <section class="top-banner">
-                                    <div class="container-fluid">
-                                        <h4 class="mx-5">Check the Weather</h1>
-                                        <form class="mx-5">
+                                <section class="containder_fluid top-banner">
+                                        <h4 class="">Check the Weather</h1>
+                                        <form class="">
                                         <input type="text" placeholder="enter a city, like Taipei..." autofocus>
                                         <button type="submit">ENTER</button>
                                         <span class="msg"></span>
                                         </form>
-                                    </div>
                                     </section>
                                     <section class="ajax-section">
-                                    <div class="container">
+                                    <div class="containder_fluid">
                                         <ul class="cities"></ul>
                                     </div>
                                 </section>
                                 <!--WEATHER API ENDS-->
                             </div>
-                            <div class="col-md-6 mx-auto my-3 tab-text">
+                            <div class="col-md-5 mx-auto my-3 tab-text">
                                 <h3>Climate:</h3>
                                 <!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%B0%A3%E5%80%99-->
                                 <p class="mx-auto">The climate of Taiwan Island has a subtropical monsoon climate to
@@ -252,11 +250,27 @@
                 <div class="tab-pane fade" id="culture">
                     <div class="container-fluid">
                         <div class="row my-4">
-                            <div class="col-md-4 mx-auto my-auto">
-                                <!--credit: image is from https://unsplash.com/photos/MwUUzMwQwPw-->
-                                <img src='assets/images/temple.jpg' class="img-fluid img-thumbnail mx-auto d-block"
-                                alt="picture of a temple at night" />
+                            <!--FANCYBOX API https://fancyapps.com/fancybox/3/-->
+                            <div class="col-md-5 card-deck">
+                                <div class="card mx-5 my-auto">
+                                    <!--credit: video is from https://youtu.be/AQODWgAuC5c-->
+                                    <a data-fancybox href="https://youtu.be/AQODWgAuC5c">
+                                        <!--credit: image is from https://www.flickr.com/photos/idisdao/7309523458/-->
+                                        <img class="card-img-top img-fluid" src="assets/images/aboriginal2.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p>Click to view a video.</p>
+                                            <footer class="blockquote-footer">Video taken from <a
+                                                href="https://youtu.be/AQODWgAuC5c">Youtube</a>
+                                            </footer>
+                                        </div>
+                                    </div> 
+                                </div>                           
                             </div>
+
+                        
+                            <!--FANCYBOX API ENDS-->
                         <div class="col-md-6 mx-auto my-3 tab-text">
                             <h3>Culture:</h3>
                             <!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%96%87%E5%8C%96-->
@@ -287,7 +301,10 @@
                             </footer>
                         </div>
                     </div>
-                </div>
+                
+                
+                
+                    </div>
                 </div>
                 <!--CULTURE TAB ENDS-->
 
