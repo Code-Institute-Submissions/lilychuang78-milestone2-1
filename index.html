@@ -13,6 +13,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
@@ -180,11 +181,10 @@
                 <div class="tab-pane fade" id="population">
                 <div class="container-fluid">
                         <div class="row my-4">
-                            <div class="col-md-4 mx-auto my-auto">
-                                <!--credit: image is from https://cyberisland.teldap.tw/P/qHOFfKktwBi-->
-                                <img src='assets/images/aboriginal.jpg' class="img-fluid img-thumbnail mx-auto d-block" alt="aboriginal people in Taiwan" />
-                            </div>
-                            <div class="col-md-6 mx-auto my-3 tab-text">
+                        <div class="col-md-6 my-auto chart-container">
+                            <canvas id="chart1"></canvas>
+                        </div>
+                            <div class="col-md-5 mx-auto my-3 tab-text">
                                 <h3>Population:</h3>
                                 <!--credit: information taken from https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.-->
                                 <p class="mx-auto">The population of Taiwan is approximately 23.57 million,
@@ -444,6 +444,7 @@
 			<script src="assets/js/maps.js"> </script>
             <script src="assets/js/weather.js"></script>
             <script src="assets/js/translate.js"></script>
+            <script src="assets/js/charts.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </body>
 </html>

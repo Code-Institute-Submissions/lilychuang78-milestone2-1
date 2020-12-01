@@ -212,7 +212,7 @@ border-radius: 2%;
 .ajax-section .city-name sup {
   padding: 0.2em 0.6em;
   border-radius: 50%;
-  background: white;
+  background-color: white;
 }
 
 .ajax-section .city-icon {
@@ -221,6 +221,11 @@ border-radius: 2%;
 /*---credit ends---*/
 
 /*---POPULATION---*/
+.chart-container{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 2%;
+    height: 25rem;
+}
 
 /*---LANGUAGE---*/
 /*.goog-te-gadget {
