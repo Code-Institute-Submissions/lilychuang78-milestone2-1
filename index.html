@@ -1,434 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
       <title>#DiscoverTaiwan</title>
    </head>
    <body>
-        <!--NAVBAR STARTS-->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-bg">
-            <a class="navbar-brand nav-text" href="#home">#DiscoverTaiwan</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#info">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#cuisine">Cuisine</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#attraction">Attraction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-text" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--NAVBAR ENDS-->
-
-        <!--SLIDESHOW STARTS HERE-->
-        <!--credit: https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/-->
-        <div id="home">
-            <div id="slideshow">
-                <div class="img-case">
-                    <!--credit: images are from https://unsplash.com/photos/au3CYbd7vCU/-->
-                    <img src="assets/images/Taipei_101.jpg" class="img-fluid expand" alt="Taipei 101" />
-                </div>
-                <div class="img-case">
-                <!--credit: images are from https://unsplash.com/photos/WPmDmxiI6IA-->
-                <img src="assets/images/coastline.jpg" class="img-fluid" alt="East coast line" />
-                </div>
-                <div class="img-case">
-                <!--credit: images are from https://unsplash.com/photos/L6xHmv2R3G4-->
-                <img src="assets/images/mountain_road.jpg" class="img-fluid" alt="a small road on a mountain" />
-                </div>
-                <div class="img-case">
-                <!--credit: images are from https://unsplash.com/photos/6rEPAbrXNaY-->
-                <img src="assets/images/nightmarket.jpg" class="img-fluid" alt="Night market" />
-                </div>
-            </div>
-        </div>
-        <!--SLIDESHOW ENDS-->
-
-        <!--INFO INTRO STARTS-->
-        <div id="info"></div>
-        <section class="container-fluid info-container">
-            <div class="jumbotron mb-0">
-                <h1 class="mb-3 mt-1">#DiscoverTaiwan</h1>
-                <p class="mx-5 mt-4">
-                This website is dedicated to introducing Taiwan to everyone.<br>
-                Taiwan is a country rich with its diverse cultures and friendly people.<br>
-                We have a female president, transgener IT misiter and legal homosexual marriage.<br>
-                Are you curious about this interesting country?<br>
-                <strong>Let's explore more!</strong><br>
-                </p>
-            </div>
-        </section>
-        <!--INFO INTRO ENDS-->
-        
-        <!--INFO SECTION STRATS HERE-->
-        <section class="container-fluid">
-            <ul class="nav nav-tabs nav-justified mx-5 mb-5">
-                <li class="nav-item tab">
-                    <a href="#location" class="nav-link active" data-toggle="tab"><strong>Location</strong></a>
-                </li>
-                <li class="nav-item tab">
-                    <a href="#climate" class="nav-link" data-toggle="tab"><strong>Climate</strong></a>
-                </li>
-                <li class="nav-item tab">
-                    <a href="#population" class="nav-link" data-toggle="tab"><strong>Population</strong></a>
-                </li>
-                <li class="nav-item tab">
-                    <a href="#language" class="nav-link" data-toggle="tab"><strong>Language</strong></a>
-                </li>
-                <li class="nav-item tab">
-                    <a href="#culture" class="nav-link" data-toggle="tab"><strong>Culture</strong></a>
-                </li>
-                <li class="nav-item tab">
-                    <a href="#business" class="nav-link" data-toggle="tab"><strong>Business</strong></a>
-                </li>
+      <!--NAVBAR STARTS-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-bg">
+         <a class="navbar-brand nav-text" href="#home">#DiscoverTaiwan</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon "></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link nav-text" href="#info">Info</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link nav-text" href="#cuisine">Cuisine</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link nav-text" href="#attraction">Attraction</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link nav-text" href="#contact">Contact</a>
+               </li>
             </ul>
-            <div class="tab-content mx-5">
-                <!--LOCATION TAB STARTS-->
-                <div class="tab-pane fade show active" id="location">
-                <div class="container-fluid">
-                    <div class="row my-4">
-                            <div class="col-md-4 mx-auto my-auto map-container">
-                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
-                                <div id="map1" class="d-block"></div>
-                            </div>
-                            <div class="col-md-6 mx-auto my-3 tab-text">
-                                <h3>Location:</h3>
-                                <!--credit: information taken from https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E5%9C%B0%E7%90%86#%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE-->
-                                <p class="mx-auto">Taiwan is located in the eastern part of Asia, at the intersection of
-                                    Northeast Asia and Southeast Asia. Its relative positions with the surrounding areas are:
-                                    east to the Pacific Ocean (Philippine Sea), west to the Taiwan Strait and Eurasia.
-                                    From the perspective of geopolitical theory, Taiwan is located exactly in the
-                                    central area of the East Asian island arc and is an important hub and strategic
-                                    location for Asia-Pacific economic and trade transportation.
-                                </p>
-                                <footer class="blockquote-footer">Information taken from <a
-                                href="https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E5%9C%B0%E7%90%86#%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE">wikipedia</a>
-                                </footer>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <!--LOCATION TAB ENDS-->
-
-                <!--CLIMATE TAB STARTS-->
-                <div class="tab-pane fade" id="climate">
-                <div class="container-fluid">
-                    <div class="row my-4">
-                            <div class="col-md-4 container-fluid climate-container mt-3">
-                                <!--WEATHER API STARTS-->
-                                <section class="containder_fluid top-banner">
-                                        <h4>Check the Weather</h4>
-                                        <form>
-                                        <input type="text" placeholder="enter a city, like Taipei..." autofocus>
-                                        <button type="submit">ENTER</button>
-                                        <span class="msg"></span>
-                                        </form>
-                                    </section>
-                                    <div class="ajax-section">
-                                    <div class="containder_fluid">
-                                        <ul class="cities"></ul>
-                                    </div>
-                                </div>
-                                <!--WEATHER API ENDS-->
-                            </div>
-                            <div class="col-md-5 mx-auto my-3 tab-text">
-                                <h3>Climate:</h3>
-                                <!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%B0%A3%E5%80%99-->
-                                <p class="mx-auto">The climate of Taiwan Island has a subtropical monsoon climate to
-                                    the north of the Tropic of Cancer and a tropical monsoon climate to the south.
-                                    Or divide the whole territory into tropical and subtropical zones, and use the
-                                    northern and southern boundaries of the island as a transition zone. In
-                                    addition, although it is a subtropical island with a warm flat climate, the
-                                    mountainous area of Taiwan Island is full of temperate plants due to the
-                                    extremely high mountains. In winter, the snow-capped mountains in the north even
-                                    snow every year.
-                                </p>
-                                <footer class="blockquote-footer">Information taken from <a
-                                href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%B0%A3%E5%80%99">wikipedia</a>
-                                </footer>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <!--CLIMATE TAB ENDS-->
-
-                <!--POPULATION TAB STARTS-->
-                <div class="tab-pane fade" id="population">
-                <div class="container-fluid">
-                        <div class="row my-4">
-                            <div class="col-md-6 my-auto chart-container1">
-                                <canvas id="chart1"></canvas>
-                            </div>
-                            <div class="col-md-5 mx-auto my-3 tab-text">
-                                <h3>Population:</h3>
-                                <!--credit: information taken from https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.-->
-                                <p class="mx-auto">The population of Taiwan is approximately 23.57 million,
-                                    spread across a total land area of
-                                    about 36,000 km2; it is the seventeenth most densely populated country in
-                                    the world, with a population density of about 651 inhabitants per square
-                                    kilometer.<br>
-                                    The original population of the island of Taiwan and its
-                                    associated islands consists of a variety of Taiwanese indigenous
-                                    peoples.They share the same ancestory DNA with the
-                                    Austronesian family and with island peoples
-                                    of Southeast Asia and the Pacific.<br>
-                                    Immigration of Han Chinese to the Penghu islands started as early as the
-                                    13th century, while settlement of the main island occurred from the 16th
-                                    century. It was stimulated by Dutch traders importing workers from Fujian in
-                                    the 17th century. According to governmental statistics, in the early 21st
-                                    century, more than 95% of the Republic of China's population are Han Chinese
-                                    of East Asian ethnicity, while 2.3% are Taiwanese aborigines of Austronesian
-                                    ethnicity. 85% of Taiwanese have some level of aboriginal ancestry.
-                                </p>
-                                <footer class="blockquote-footer">Information taken from <a
-                                href="https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.">wikipedia</a>
-                                </footer>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <!--POPULATION TAB ENDS-->
-
-                <!--LANGUAGE TAB STARTS-->
-                <div class="tab-pane fade" id="language">
-                <div class="container-fluid">
-                        <div class="row my-4">
-                            <div class="col-md-4 mx-auto my-auto">
-                                <!--credit: image is from https://pixabay.com/zh/photos/still-life-window-display-window-4162597/-->
-                                <img src='assets/images/language.jpg' class="img-fluid img-thumbnail mx-auto d-block" alt="Traditional Chinese written on a globe" />
-                            </div>
-                            <div class="col-md-6 mx-auto my-3 tab-text">                                
-                                <h3>Language:</h3>
-                                <!--credit: information taken from https://en.wikipedia.org/wiki/Languages_of_Taiwan-->
-                                <p class="mx-auto">The languages of Taiwan consist of several varieties of
-                                languages under families of Austronesian languages and Sino-Tibetan
-                                languages spoken in Taiwan.<br>
-                                Researches on historical linguistics
-                                recognize Taiwan as the homeland of the whole Austronesian languages
-                                family owing to the highest internal variety of the Formosan
-                                languages.<br>
-                                In the last 400 years, several waves of Chinese emigrations brought
-                                several different Sino-Tibetan languages into Taiwan. These languages
-                                include traditional Mandarin known as the national language, Taiwanese
-                                Hokkien,
-                                spoken by about 70% of the population and Hakka in Taiwan.
-                                </p>
-                                <footer class="blockquote-footer">Information taken from <a
-                                href="https://en.wikipedia.org/wiki/Languages_of_Taiwan">wikipedia</a>
-                                </footer>
-                                <div class="mt-3">
-                                    <p class="mb-0">
-                                        <strong>Translate this website to Chinese (Traditional) using Google Translation!</strong>
-                                    </p>
-                                </div>
-                                <div id="google_translate_element"></div>
-                            </div>
-                            
-                        </div>
-                </div>
-                </div>
-                <!--LANGUAGE TAB ENDS-->
-
-                <!--CULTURE TAB STARTS-->
-                <div class="tab-pane fade" id="culture">
-                    <div class="container-fluid">
-                        <div class="row my-4">
-                            <!--FANCYBOX API https://fancyapps.com/fancybox/3/-->
-                            <div class="col-md-5 card-deck">
-                                <div class="card mx-5 my-auto">
-                                    <!--credit: video is from https://youtu.be/AQODWgAuC5c-->
-                                    <a data-fancybox href="https://youtu.be/AQODWgAuC5c">
-                                        <!--credit: image is from https://www.flickr.com/photos/idisdao/7309523458/-->
-                                        <img class="card-img-top img-fluid" src="assets/images/aboriginal2.jpg" alt="aboriginal women dancing"/>
-                                    </a>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <p><strong>Click the image to view a video <i class="fas fa-arrow-up"></i></strong></p>
-                                            <footer class="blockquote-footer">Video taken from <a
-                                                href="https://youtu.be/AQODWgAuC5c">Youtube</a>
-                                            </footer>
-                                        </div>
-                                    </div> 
-                                </div>                           
-                            </div>
-
-                        
-                            <!--FANCYBOX API ENDS-->
-                        <div class="col-md-6 mx-auto my-3 tab-text">
-                            <h3>Culture:</h3>
-                            <!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%96%87%E5%8C%96-->
-                            <p class="mx-auto">Taiwanese culture consists of many sided backgrounds. 
-                                From the earliest Austronesian culture, ancient Fujian and Guangdong
-                                culture, the early Western civilization brought by the Dutch,
-                                Portuguese, and
-                                Spanish colonists. The Minnan
-                                culture and Hakka brought by the large-scale reclamation of the Han
-                                people. Han Culture, Confucianism, Taoism, Buddhism and other
-                                religions began to
-                                influence the region, and later mixed with Japanese cultural
-                                influence during the Japanese rule.
-                                In the middle of the 20th century, the US military stationed in
-                                Taiwan was influenced by
-                                American culture after the war, and the cultural revival of local
-                                and Taiwanese aborigines In the middle and late twentieth century, a
-                                large number of ASEAN countries such as Indonesia and Vietnam
-                                emigrated to Taiwan, which
-                                caused a rich collision with Taiwan’s multilingual and
-                                cultural. Therefore, Taiwanese culture has traditional and modern
-                                aspects,
-                                and the cultural category with Taiwan as the main body is gradually
-                                established.
-                            </p>
-                            <footer class="blockquote-footer">Information taken from <a
-                                href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%96%87%E5%8C%96">wikipedia</a>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <!--CULTURE TAB ENDS-->
-
-                <!--BUSINESS TAB STARTS-->
-                <div class="tab-pane fade" id="business">
-                <div class="container-fluid">
-                        <div class="row my-4">
-                            <div class="col-md-6 my-auto chart-container2">
-                                <canvas id="chart2"></canvas>
-                            </div>
-                            <div class="col-md-5 mx-auto my-3 tab-text">
-                                <h3>Business:</h3>
-                                <!--credit: information taken from
-                                https://international.thenewslens.com/article/124421 and
-                                https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan-->
-                                <p class="mx-auto">Taiwan maintains a stable industrial economy as a
-                                    result of rapid economic growth and industrialization. The
-                                    21st-largest economy in the world, its high-tech industry
-                                    plays a key role in the global economy. Worldwilde known
-                                    Cooperations includes such as
-                                    Foxconn, Acer, Asus, and Giant. Taiwan is
-                                    ranked highly in terms of freedom of the press, health care,
-                                    public education, economic freedom, and human development.
-                                    According to the 2019 Expat Insider survey, Taiwan is ranked as
-                                    the best destination for expat for its high quality of life,
-                                    good personal finances, and great working life. It is rated best
-                                    in the world for the affordability of healthcare, with 89
-                                    percent of respondents satisfied with this factor (versus 55
-                                    percent globally). In addition to the logistical aspects of
-                                    life, 88 percent of expats find that Taiwanese locals are
-                                    generally friendly.
-                                </p>
-                                <footer class="blockquote-footer">Information taken from <a
-                                    href="https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan">wikipedia</a> and <a
-                                    href="https://international.thenewslens.com/article/124421">The
-                                    News Lens</a>
-                                </footer>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--BUSINESS TAB ENDS-->
+         </div>
+      </nav>
+      <!--NAVBAR ENDS-->
+      <!--SLIDESHOW STARTS HERE-->
+      <!--credit: https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/-->
+      <div id="home">
+         <div id="slideshow">
+            <div class="img-case">
+               <!--credit: images are from https://unsplash.com/photos/au3CYbd7vCU/-->
+               <img src="assets/images/Taipei_101.jpg" class="img-fluid expand" alt="Taipei 101" />
             </div>
-        </section>
-        <!--INFO TAB ENDS-->
-
-        <!--CUISINE SECTION STARTS-->
-        <section id="cuisine" class="container-fluid">
-            <!--CUISiNE HEADER STARTS-->
-            <div class="cuisine-container">
-                <div class="cuisine-header">
-                    <div class="text-center article">
-                        <h3>Taiwanese Cuisine</h3>
-                        <p>Taiwanese cuisine in a broad sense refers to dishes created in Taiwan or in a narrow sense it is
-                            limited to traditional Taiwanese southern Hokkien dishes. Although similar to traditional Chinese
-                            cuisine, the very same ingredients are not available in Taiwan. Along time the local cuisine has
-                            developed into a variety of innovative cuisines influenced by Fujian, Hakka, Aboriginal people,
-                            other provinces of China, Japanese and many other foreign countries. The worldknown bubble milk tea
-                            was born in this island.
-                            <strong>Click the cuisines <i class="fas fa-arrow-down"></i> <strong>
+            <div class="img-case">
+               <!--credit: images are from https://unsplash.com/photos/WPmDmxiI6IA-->
+               <img src="assets/images/coastline.jpg" class="img-fluid" alt="East coast line" />
+            </div>
+            <div class="img-case">
+               <!--credit: images are from https://unsplash.com/photos/L6xHmv2R3G4-->
+               <img src="assets/images/mountain_road.jpg" class="img-fluid" alt="a small road on a mountain" />
+            </div>
+            <div class="img-case">
+               <!--credit: images are from https://unsplash.com/photos/6rEPAbrXNaY-->
+               <img src="assets/images/nightmarket.jpg" class="img-fluid" alt="Night market" />
+            </div>
+         </div>
+      </div>
+      <!--SLIDESHOW ENDS-->
+      <!--INFO INTRO STARTS-->
+      <div id="info"></div>
+      <section class="container-fluid info-container">
+         <div class="jumbotron mb-0">
+            <h1 class="mb-3 mt-1">#DiscoverTaiwan</h1>
+            <p class="mx-5 mt-4">
+               This website is dedicated to introducing Taiwan to everyone.<br>
+               Taiwan is a country rich with its diverse cultures and friendly people.<br>
+               We have a female president, transgener IT misiter and legal homosexual marriage.<br>
+               Are you curious about this interesting country?<br>
+               <strong>Let's explore more!</strong><br>
+            </p>
+         </div>
+      </section>
+      <!--INFO INTRO ENDS-->
+      <!--INFO SECTION STRATS HERE-->
+      <section class="container-fluid">
+         <ul class="nav nav-tabs nav-justified mx-5 mb-5">
+            <li class="nav-item tab">
+               <a href="#location" class="nav-link active" data-toggle="tab"><strong>Location</strong></a>
+            </li>
+            <li class="nav-item tab">
+               <a href="#climate" class="nav-link" data-toggle="tab"><strong>Climate</strong></a>
+            </li>
+            <li class="nav-item tab">
+               <a href="#population" class="nav-link" data-toggle="tab"><strong>Population</strong></a>
+            </li>
+            <li class="nav-item tab">
+               <a href="#language" class="nav-link" data-toggle="tab"><strong>Language</strong></a>
+            </li>
+            <li class="nav-item tab">
+               <a href="#culture" class="nav-link" data-toggle="tab"><strong>Culture</strong></a>
+            </li>
+            <li class="nav-item tab">
+               <a href="#business" class="nav-link" data-toggle="tab"><strong>Business</strong></a>
+            </li>
+         </ul>
+         <div class="tab-content mx-5">
+            <!--LOCATION TAB STARTS-->
+            <div class="tab-pane fade show active" id="location">
+               <div class="container-fluid">
+                  <div class="row my-4">
+                     <div class="col-md-4 mx-auto my-auto map-container">
+                        <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
+                        <div id="map1" class="d-block"></div>
+                     </div>
+                     <div class="col-md-6 mx-auto my-3 tab-text">
+                        <h3>Location:</h3>
+                        <!--credit: information taken from https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E5%9C%B0%E7%90%86#%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE-->
+                        <p class="mx-auto">Taiwan is located in the eastern part of Asia, at the intersection of
+                           Northeast Asia and Southeast Asia. Its relative positions with the surrounding areas are:
+                           east to the Pacific Ocean (Philippine Sea), west to the Taiwan Strait and Eurasia.
+                           From the perspective of geopolitical theory, Taiwan is located exactly in the
+                           central area of the East Asian island arc and is an important hub and strategic
+                           location for Asia-Pacific economic and trade transportation.
                         </p>
-                    </div>
-                </div>
+                        <footer class="blockquote-footer">Information taken from <a
+                           href="https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E5%9C%B0%E7%90%86#%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE">wikipedia</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!--CUISiNE HEADER ENDS-->
-
-            <!--CUISINE IMAGES STARTS-->
-            <div class="cuisine-img-container">
-                <!--FANCYBOX API https://fancyapps.com/fancybox/3/-->
-                <p class="imglist">
-                    <a href="assets/images/beef_noodle.jpg" data-fancybox="images" data-caption="Beef noodle soup">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E7%89%9B%E8%82%89%E9%BA%B5,_%E6%B2%88%E8%A8%98%E7%89%9B%E8%82%89%E9%BA%B5,_%E6%9D%BE%E6%B1%9F%E5%B8%82%E5%A0%B4,_%E5%8F%B0%E5%8C%97_(18260677986).jpg-->
-                        <img src="assets/images/beef_noodle.jpg" alt="Beef noodle soup" />
-                    </a>
-                    <a href="assets/images/soup_dumpling.jpg" data-fancybox="images" data-caption="Soup dumpling">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:Xiao_Long_Bao_by_jslander_at_Din_Tai_Fung,_Arcadia.jpg-->
-                        <img src="assets/images/soup_dumpling.jpg" alt="Soup dumpling" />
-                    </a>
-                    <a href="assets/images/braised_pork.jpg" data-fancybox="images" data-caption="Braised pork on rice">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:Lurou_fan_by_udono_in_Tamsui,_Taipei.jpg-->
-                        <img src="assets/images/braised_pork.jpg" alt="Braised pork on rice" />
-                    </a>
-                    <a href="assets/images/stinky_tofu.jpg" data-fancybox="images" data-caption="Stinky tofu">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E9%85%A5%E7%82%B8%E8%87%AD%E8%B1%86%E8%85%90.JPG-->
-                        <img src="assets/images/stinky_tofu.jpg" alt="Stinky tofu" />
-                    </a>
-                    <a href="assets/images/bawan.jpg" data-fancybox="images" data-caption="Taiwanese meatball in steamed and fried dough">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E7%82%B8%E8%82%89%E5%9C%93.JPG-->
-                        <img src="assets/images/bawan.jpg" alt="Taiwanese meatball" />
-                    </a>
-                    <a href="assets/images/oyster_omelette.jpg" data-fancybox="images" data-caption="Oyster omelette">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:Oyster_omelette_from_Chien_Cheng_Rotary_20040330.jpg-->
-                        <img src="assets/images/oyster_omelette.jpg" alt="Oyster omelette" />
-                    </a>
-                    <a href="assets/images/steamed_bum_pork.jpg" data-fancybox="images" data-caption="Pork belly in steamed bum">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E7%82%B8%E8%82%89%E5%9C%93.JPG-->
-                        <img src="assets/images/steamed_bum_pork.jpg" alt="Pork belly in steamed bum" />
-                    </a>
-                    <a href="assets/images/mango_ice.jpg" data-fancybox="images" data-caption="Mango on shaved ice">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E9%A3%9B%E5%86%B0%E8%8F%93%E5%AE%A4-%E5%A5%B6%E9%85%AA%E5%A4%A7%E8%8A%92%E6%9E%9C%E9%81%87%E5%88%B0%E5%B0%8F%E8%8A%92%E6%9E%9C%E5%86%B0.jpg-->
-                        <img src="assets/images/mango_ice.jpg" alt="Mango on shaved ice" />
-                    </a>
-                    <a href="assets/images/bubble_tea.jpg" data-fancybox="images" data-caption="Bubble milk tea">
-                        <!--credit: image is from https://pixabay.com/zh/photos/boba-pearl-milk-tea-boba-milk-tea-4402053/-->
-                        <img src="assets/images/bubble_tea.jpg" alt="Bubble milk tea" />
-                    </a>
-                    <a href="assets/images/pineapple_cake.jpg" data-fancybox="images" data-caption="Pineapple cake">
-                        <!--credit: image is from https://commons.wikimedia.org/wiki/File:Pineapple_Pastry.JPG-->
-                        <img src="assets/images/pineapple_cake.jpg" alt="Pineapple cake" />
-                    </a>
-                </p>
-                <!--FANCYBOX API ENDS-->
-                                </div>
-            <!--CUISiNE IMAGES ENDS-->
-        </section>
-        <!--CUISINE SECTION ENDS-->
-
-        <!--ATTRACTION SECTION STARTS-->
-        <section class="container-fluid">
+            <!--LOCATION TAB ENDS-->
+            <!--CLIMATE TAB STARTS-->
+            <div class="tab-pane fade" id="climate">
+               <div class="container-fluid">
+                  <div class="row my-4">
+                     <div class="col-md-4 container-fluid climate-container mt-3">
+                        <!--WEATHER API STARTS-->
+                        <section class="containder_fluid top-banner">
+                           <h4>Check the Weather</h4>
+                           <form>
+                              <input type="text" placeholder="enter a city, like Taipei..." autofocus>
+                              <button type="submit">ENTER</button>
+                              <span class="msg"></span>
+                           </form>
+                        </section>
+                        <div class="ajax-section">
+                           <div class="containder_fluid">
+                              <ul class="cities"></ul>
+                           </div>
+                        </div>
+                        <!--WEATHER API ENDS-->
+                     </div>
+                     <div class="col-md-5 mx-auto my-3 tab-text">
+                        <h3>Climate:</h3>
+                        <!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%B0%A3%E5%80%99-->
+                        <p class="mx-auto">The climate of Taiwan Island has a subtropical monsoon climate to
+                           the north of the Tropic of Cancer and a tropical monsoon climate to the south.
+                           Or divide the whole territory into tropical and subtropical zones, and use the
+                           northern and southern boundaries of the island as a transition zone. In
+                           addition, although it is a subtropical island with a warm flat climate, the
+                           mountainous area of Taiwan Island is full of temperate plants due to the
+                           extremely high mountains. In winter, the snow-capped mountains in the north even
+                           snow every year.
+                        </p>
+                        <footer class="blockquote-footer">Information taken from <a
+                           href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%B0%A3%E5%80%99">wikipedia</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--CLIMATE TAB ENDS-->
+            <!--POPULATION TAB STARTS-->
+            <div class="tab-pane fade" id="population">
+               <div class="container-fluid">
+                  <div class="row my-4">
+                     <div class="col-md-6 my-auto chart-container1">
+                        <canvas id="chart1"></canvas>
+                     </div>
+                     <div class="col-md-5 mx-auto my-3 tab-text">
+                        <h3>Population:</h3>
+                        <!--credit: information taken from https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.-->
+                        <p class="mx-auto">The population of Taiwan is approximately 23.57 million,
+                           spread across a total land area of
+                           about 36,000 km2; it is the seventeenth most densely populated country in
+                           the world, with a population density of about 651 inhabitants per square
+                           kilometer.<br>
+                           The original population of the island of Taiwan and its
+                           associated islands consists of a variety of Taiwanese indigenous
+                           peoples.They share the same ancestory DNA with the
+                           Austronesian family and with island peoples
+                           of Southeast Asia and the Pacific.<br>
+                           Immigration of Han Chinese to the Penghu islands started as early as the
+                           13th century, while settlement of the main island occurred from the 16th
+                           century. It was stimulated by Dutch traders importing workers from Fujian in
+                           the 17th century. According to governmental statistics, in the early 21st
+                           century, more than 95% of the Republic of China's population are Han Chinese
+                           of East Asian ethnicity, while 2.3% are Taiwanese aborigines of Austronesian
+                           ethnicity. 85% of Taiwanese have some level of aboriginal ancestry.
+                        </p>
+                        <footer class="blockquote-footer">Information taken from <a
+                           href="https://en.wikipedia.org/wiki/Demographics_of_Taiwan#:~:text=The%20population%20of%20Taiwan%2C%20officially,651%20inhabitants%20per%20square%20kilometer.">wikipedia</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--POPULATION TAB ENDS-->
+            <!--LANGUAGE TAB STARTS-->
+            <div class="tab-pane fade" id="language">
+               <div class="container-fluid">
+                  <div class="row my-4">
+                     <div class="col-md-4 mx-auto my-auto">
+                        <!--credit: image is from https://pixabay.com/zh/photos/still-life-window-display-window-4162597/-->
+                        <img src='assets/images/language.jpg' class="img-fluid img-thumbnail mx-auto d-block" alt="Traditional Chinese written on a globe" />
+                     </div>
+                     <div class="col-md-6 mx-auto my-3 tab-text">
+                        <h3>Language:</h3>
+                        <!--credit: information taken from https://en.wikipedia.org/wiki/Languages_of_Taiwan-->
+                        <p class="mx-auto">The languages of Taiwan consist of several varieties of
+                           languages under families of Austronesian languages and Sino-Tibetan
+                           languages spoken in Taiwan.<br>
+                           Researches on historical linguistics
+                           recognize Taiwan as the homeland of the whole Austronesian languages
+                           family owing to the highest internal variety of the Formosan
+                           languages.<br>
+                           In the last 400 years, several waves of Chinese emigrations brought
+                           several different Sino-Tibetan languages into Taiwan. These languages
+                           include traditional Mandarin known as the national language, Taiwanese
+                           Hokkien,
+                           spoken by about 70% of the population and Hakka in Taiwan.
+                        </p>
+                        <footer class="blockquote-footer">Information taken from <a
+                           href="https://en.wikipedia.org/wiki/Languages_of_Taiwan">wikipedia</a>
+                        </footer>
+                        <div class="mt-3">
+                           <p class="mb-0">
+                              <strong>Translate this website to Chinese (Traditional) using Google Translation!</strong>
+                           </p>
+                        </div>
+                        <div id="google_translate_element"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--LANGUAGE TAB ENDS-->
+            <!--CULTURE TAB STARTS-->
+            <div class="tab-pane fade" id="culture">
+               <div class="container-fluid">
+                  <div class="row my-4">
+                     <!--FANCYBOX API https://fancyapps.com/fancybox/3/-->
+                     <div class="col-md-5 card-deck">
+                        <div class="card mx-5 my-auto">
+                           <!--credit: video is from https://youtu.be/AQODWgAuC5c-->
+                           <a data-fancybox href="https://youtu.be/AQODWgAuC5c">
+                              <!--credit: image is from https://www.flickr.com/photos/idisdao/7309523458/-->
+                              <img class="card-img-top img-fluid" src="assets/images/aboriginal2.jpg" alt="aboriginal women dancing"/>
+                           </a>
+                           <div class="card-body">
+                              <div class="card-text">
+                                 <p><strong>Click the image to view a video <i class="fas fa-arrow-up"></i></strong></p>
+                                 <footer class="blockquote-footer">Video taken from <a
+                                    href="https://youtu.be/AQODWgAuC5c">Youtube</a>
+                                 </footer>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--FANCYBOX API ENDS-->
+                     <div class="col-md-6 mx-auto my-3 tab-text">
+                        <h3>Culture:</h3>
+                        <!--credit: information taken from https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%96%87%E5%8C%96-->
+                        <p class="mx-auto">Taiwanese culture consists of many sided backgrounds. 
+                           From the earliest Austronesian culture, ancient Fujian and Guangdong
+                           culture, the early Western civilization brought by the Dutch,
+                           Portuguese, and
+                           Spanish colonists. The Minnan
+                           culture and Hakka brought by the large-scale reclamation of the Han
+                           people. Han Culture, Confucianism, Taoism, Buddhism and other
+                           religions began to
+                           influence the region, and later mixed with Japanese cultural
+                           influence during the Japanese rule.
+                           In the middle of the 20th century, the US military stationed in
+                           Taiwan was influenced by
+                           American culture after the war, and the cultural revival of local
+                           and Taiwanese aborigines In the middle and late twentieth century, a
+                           large number of ASEAN countries such as Indonesia and Vietnam
+                           emigrated to Taiwan, which
+                           caused a rich collision with Taiwan’s multilingual and
+                           cultural. Therefore, Taiwanese culture has traditional and modern
+                           aspects,
+                           and the cultural category with Taiwan as the main body is gradually
+                           established.
+                        </p>
+                        <footer class="blockquote-footer">Information taken from <a
+                           href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E6%96%87%E5%8C%96">wikipedia</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--CULTURE TAB ENDS-->
+            <!--BUSINESS TAB STARTS-->
+            <div class="tab-pane fade" id="business">
+               <div class="container-fluid">
+                  <div class="row my-4">
+                     <div class="col-md-6 my-auto chart-container2">
+                        <canvas id="chart2"></canvas>
+                     </div>
+                     <div class="col-md-5 mx-auto my-3 tab-text">
+                        <h3>Business:</h3>
+                        <!--credit: information taken from
+                           https://international.thenewslens.com/article/124421 and
+                           https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan-->
+                        <p class="mx-auto">Taiwan maintains a stable industrial economy as a
+                           result of rapid economic growth and industrialization. The
+                           21st-largest economy in the world, its high-tech industry
+                           plays a key role in the global economy. Worldwilde known
+                           Cooperations includes such as
+                           Foxconn, Acer, Asus, and Giant. Taiwan is
+                           ranked highly in terms of freedom of the press, health care,
+                           public education, economic freedom, and human development.
+                           According to the 2019 Expat Insider survey, Taiwan is ranked as
+                           the best destination for expat for its high quality of life,
+                           good personal finances, and great working life. It is rated best
+                           in the world for the affordability of healthcare, with 89
+                           percent of respondents satisfied with this factor (versus 55
+                           percent globally). In addition to the logistical aspects of
+                           life, 88 percent of expats find that Taiwanese locals are
+                           generally friendly.
+                        </p>
+                        <footer class="blockquote-footer">Information taken from <a
+                           href="https://en.wikipedia.org/wiki/List_of_companies_of_Taiwan">wikipedia</a> and <a
+                           href="https://international.thenewslens.com/article/124421">The
+                           News Lens</a>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--BUSINESS TAB ENDS-->
+         </div>
+      </section>
+      <!--INFO TAB ENDS-->
+      <!--CUISINE SECTION STARTS-->
+      <section id="cuisine" class="container-fluid">
+         <!--CUISiNE HEADER STARTS-->
+         <div class="cuisine-container">
+            <div class="cuisine-header">
+               <div class="text-center article">
+                  <h3>Taiwanese Cuisine</h3>
+                  <p>Taiwanese cuisine in a broad sense refers to dishes created in Taiwan or in a narrow sense it is
+                     limited to traditional Taiwanese southern Hokkien dishes. Although similar to traditional Chinese
+                     cuisine, the very same ingredients are not available in Taiwan. Along time the local cuisine has
+                     developed into a variety of innovative cuisines influenced by Fujian, Hakka, Aboriginal people,
+                     other provinces of China, Japanese and many other foreign countries. The worldknown bubble milk tea
+                     was born in this island.<br>
+                     <strong>Click the cuisines</strong><i class="fas fa-arrow-down"></i>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!--CUISiNE HEADER ENDS-->
+         <!--CUISINE IMAGES STARTS-->
+         <div class="cuisine-img-container">
+            <!--FANCYBOX API https://fancyapps.com/fancybox/3/-->
+            <p class="imglist">
+               <a href="assets/images/beef_noodle.jpg" data-fancybox="images" data-caption="Beef noodle soup">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E7%89%9B%E8%82%89%E9%BA%B5,_%E6%B2%88%E8%A8%98%E7%89%9B%E8%82%89%E9%BA%B5,_%E6%9D%BE%E6%B1%9F%E5%B8%82%E5%A0%B4,_%E5%8F%B0%E5%8C%97_(18260677986).jpg-->
+                  <img src="assets/images/beef_noodle.jpg" alt="Beef noodle soup" />
+               </a>
+               <a href="assets/images/soup_dumpling.jpg" data-fancybox="images" data-caption="Soup dumpling">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:Xiao_Long_Bao_by_jslander_at_Din_Tai_Fung,_Arcadia.jpg-->
+                  <img src="assets/images/soup_dumpling.jpg" alt="Soup dumpling" />
+               </a>
+               <a href="assets/images/braised_pork.jpg" data-fancybox="images" data-caption="Braised pork on rice">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:Lurou_fan_by_udono_in_Tamsui,_Taipei.jpg-->
+                  <img src="assets/images/braised_pork.jpg" alt="Braised pork on rice" />
+               </a>
+               <a href="assets/images/stinky_tofu.jpg" data-fancybox="images" data-caption="Stinky tofu">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E9%85%A5%E7%82%B8%E8%87%AD%E8%B1%86%E8%85%90.JPG-->
+                  <img src="assets/images/stinky_tofu.jpg" alt="Stinky tofu" />
+               </a>
+               <a href="assets/images/bawan.jpg" data-fancybox="images" data-caption="Taiwanese meatball in steamed and fried dough">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E7%82%B8%E8%82%89%E5%9C%93.JPG-->
+                  <img src="assets/images/bawan.jpg" alt="Taiwanese meatball" />
+               </a>
+               <a href="assets/images/oyster_omelette.jpg" data-fancybox="images" data-caption="Oyster omelette">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:Oyster_omelette_from_Chien_Cheng_Rotary_20040330.jpg-->
+                  <img src="assets/images/oyster_omelette.jpg" alt="Oyster omelette" />
+               </a>
+               <a href="assets/images/steamed_bum_pork.jpg" data-fancybox="images" data-caption="Pork belly in steamed bum">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E7%82%B8%E8%82%89%E5%9C%93.JPG-->
+                  <img src="assets/images/steamed_bum_pork.jpg" alt="Pork belly in steamed bum" />
+               </a>
+               <a href="assets/images/mango_ice.jpg" data-fancybox="images" data-caption="Mango on shaved ice">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:%E9%A3%9B%E5%86%B0%E8%8F%93%E5%AE%A4-%E5%A5%B6%E9%85%AA%E5%A4%A7%E8%8A%92%E6%9E%9C%E9%81%87%E5%88%B0%E5%B0%8F%E8%8A%92%E6%9E%9C%E5%86%B0.jpg-->
+                  <img src="assets/images/mango_ice.jpg" alt="Mango on shaved ice" />
+               </a>
+               <a href="assets/images/bubble_tea.jpg" data-fancybox="images" data-caption="Bubble milk tea">
+                  <!--credit: image is from https://pixabay.com/zh/photos/boba-pearl-milk-tea-boba-milk-tea-4402053/-->
+                  <img src="assets/images/bubble_tea.jpg" alt="Bubble milk tea" />
+               </a>
+               <a href="assets/images/pineapple_cake.jpg" data-fancybox="images" data-caption="Pineapple cake">
+                  <!--credit: image is from https://commons.wikimedia.org/wiki/File:Pineapple_Pastry.JPG-->
+                  <img src="assets/images/pineapple_cake.jpg" alt="Pineapple cake" />
+               </a>
+            </p>
+            <!--FANCYBOX API ENDS-->
+         </div>
+         <!--CUISiNE IMAGES ENDS-->
+      </section>
+      <!--CUISINE SECTION ENDS-->
+      <!--ATTRACTION SECTION STARTS-->
+      <section class="container-fluid">
             <div class="attraction-header">
                 <h3 id="attraction" >Attraction</h3>
             </div>
@@ -446,12 +430,12 @@
                     <a href="#east" class="nav-link" data-toggle="tab"><strong>East</strong></a>
                 </li>
 ´            </ul>
-            <div class="tab-content mx-5">
+            <div class="tab-content mx-5 my-5">
                 <!--LOCATION TAB STARTS-->
                 <div class="tab-pane fade show active" id="north">
 					<div class="container-fluid">
 						<div class="row justify-content-center">
-							<div class="col-md-10">
+							<div class="col-12">
                                 <!--GOOGLE MAP api-->
                                 <div id="northMap" class="attraction-maps"></div>
                             </div>
@@ -459,65 +443,21 @@
 					</div>
 				</div>
 			</div>
-			
-			<div class="tab-content mx-5">
-                <!--LOCATION TAB STARTS-->
-                <div class="tab-pane fade show active" id="west">
-					<div class="container-fluid">
-						<div class="row my-4">
-							<div class="col-md-4 mx-auto my-auto map-container">
-                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
-                                <div id="map1" class="d-block"></div>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		    
-			<div class="tab-content mx-5">
-                <!--LOCATION TAB STARTS-->
-                <div class="tab-pane fade show active" id="south">
-					<div class="container-fluid">
-						<div class="row my-4">
-							<div class="col-md-4 mx-auto my-auto map-container">
-                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
-                                <div id="map1" class="d-block"></div>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="tab-content mx-5">
-                <!--LOCATION TAB STARTS-->
-                <div class="tab-pane fade show active" id="east">
-					<div class="container-fluid">
-						<div class="row my-4">
-							<div class="col-md-4 mx-auto my-auto map-container">
-                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
-                                <div id="map1" class="d-block"></div>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-</section>
-        <!--put google map api here-->
-        <!--ATTRACTION SECTION ENDS-->
-        
-
-        <footer>
-        </footer>        
-        <script src="assets/js/slideshow.js"></script>
-        <script defer
-				src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap">
-        </script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <script src="assets/js/main.js"> </script>
-        <script src="assets/js/maps.js"> </script>
-        <script src="assets/js/weather.js"></script>
-        <script src="assets/js/translate.js"></script>
-        <script src="assets/js/charts.js"></script>
-        <script src="assets/js/fancybox.js"></script>
-    </body>
+    </section>
+            </div>
+      </section>
+      <!--put google map api here-->
+      <!--ATTRACTION SECTION ENDS-->
+      <footer>
+      </footer>
+      <script src="assets/js/slideshow.js"></script>
+      <script defer
+         src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      <script src="assets/js/maps.js"> </script>
+      <script src="assets/js/weather.js"></script>
+      <script src="assets/js/translate.js"></script>
+      <script src="assets/js/charts.js"></script>
+      <script src="assets/js/fancybox.js"></script>
+   </body>
 </html>
