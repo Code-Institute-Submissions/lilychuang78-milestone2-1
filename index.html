@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -21,7 +21,7 @@
    </head>
    <body>
         <!--NAVBAR STARTS-->
-        <nav class="navbar navbar-expand-lg sticky-top navbar-bg">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-bg">
             <a class="navbar-brand nav-text" href="#home">#DiscoverTaiwan</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -32,10 +32,10 @@
                         <a class="nav-link nav-text" href="#info">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-text" href="#attraction">Attraction</a>
+                        <a class="nav-link nav-text" href="#cuisine">Cuisine</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-text" href="#cuisine">Cuisine</a>
+                        <a class="nav-link nav-text" href="#attraction">Attraction</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-text" href="#contact">Contact</a>
@@ -69,9 +69,9 @@
         </div>
         <!--SLIDESHOW ENDS-->
 
-        <!--EXPLORE INTRO STARTS-->
+        <!--INFO INTRO STARTS-->
         <div id="info"></div>
-        <section class="container-fluid explore-container">
+        <section class="container-fluid info-container">
             <div class="jumbotron mb-0">
                 <h1 class="mb-3 mt-1">#DiscoverTaiwan</h1>
                 <p class="mx-5 mt-4">
@@ -79,13 +79,13 @@
                 Taiwan is a country rich with its diverse cultures and friendly people.<br>
                 We have a female president, transgener IT misiter and legal homosexual marriage.<br>
                 Are you curious about this interesting country?<br>
-                Click a tab below to find more information.<br>
+                <strong>Let's explore more!</strong><br>
                 </p>
             </div>
         </section>
-        <!--EXPLORE INTRO ENDS-->
+        <!--INFO INTRO ENDS-->
         
-        <!--EXPLORE TAB STRATS HERE-->
+        <!--INFO SECTION STRATS HERE-->
         <section class="container-fluid">
             <ul class="nav nav-tabs nav-justified mx-5 mb-5">
                 <li class="nav-item tab">
@@ -142,18 +142,18 @@
                             <div class="col-md-4 container-fluid climate-container mt-3">
                                 <!--WEATHER API STARTS-->
                                 <section class="containder_fluid top-banner">
-                                        <h4 class="">Check the Weather</h1>
-                                        <form class="">
+                                        <h4>Check the Weather</h4>
+                                        <form>
                                         <input type="text" placeholder="enter a city, like Taipei..." autofocus>
                                         <button type="submit">ENTER</button>
                                         <span class="msg"></span>
                                         </form>
                                     </section>
-                                    <section class="ajax-section">
+                                    <div class="ajax-section">
                                     <div class="containder_fluid">
                                         <ul class="cities"></ul>
                                     </div>
-                                </section>
+                                </div>
                                 <!--WEATHER API ENDS-->
                             </div>
                             <div class="col-md-5 mx-auto my-3 tab-text">
@@ -264,11 +264,11 @@
                                     <!--credit: video is from https://youtu.be/AQODWgAuC5c-->
                                     <a data-fancybox href="https://youtu.be/AQODWgAuC5c">
                                         <!--credit: image is from https://www.flickr.com/photos/idisdao/7309523458/-->
-                                        <img class="card-img-top img-fluid" src="assets/images/aboriginal2.jpg" />
+                                        <img class="card-img-top img-fluid" src="assets/images/aboriginal2.jpg" alt="aboriginal women dancing"/>
                                     </a>
                                     <div class="card-body">
                                         <div class="card-text">
-                                            <p><strong>Click to view a video</strong></p>
+                                            <p><strong>Click the image to view a video <i class="fas fa-arrow-up"></i></strong></p>
                                             <footer class="blockquote-footer">Video taken from <a
                                                 href="https://youtu.be/AQODWgAuC5c">Youtube</a>
                                             </footer>
@@ -354,18 +354,13 @@
                 <!--BUSINESS TAB ENDS-->
             </div>
         </section>
-        <!--EXPLORE TAB ENDS-->
-
-        <!--ATTRACTION SECTION STARTS-->
-        <!--put google map api here-->
-        <!--ATTRACTION SECTION ENDS-->
-        
+        <!--INFO TAB ENDS-->
 
         <!--CUISINE SECTION STARTS-->
         <section id="cuisine" class="container-fluid">
             <!--CUISiNE HEADER STARTS-->
             <div class="cuisine-container">
-                <div class="header">
+                <div class="cuisine-header">
                     <div class="text-center article">
                         <h3>Taiwanese Cuisine</h3>
                         <p>Taiwanese cuisine in a broad sense refers to dishes created in Taiwan or in a narrow sense it is
@@ -374,6 +369,7 @@
                             developed into a variety of innovative cuisines influenced by Fujian, Hakka, Aboriginal people,
                             other provinces of China, Japanese and many other foreign countries. The worldknown bubble milk tea
                             was born in this island.
+                            <strong>Click the cuisines <i class="fas fa-arrow-down"></i> <strong>
                         </p>
                     </div>
                 </div>
@@ -431,16 +427,97 @@
         </section>
         <!--CUISINE SECTION ENDS-->
 
+        <!--ATTRACTION SECTION STARTS-->
+        <section class="container-fluid">
+            <div class="attraction-header">
+                <h3 id="attraction" >Attraction</h3>
+            </div>
+            <ul class="nav nav-tabs nav-justified mx-5 mb-5">
+                <li class="nav-item tab">
+                    <a href="#north" class="nav-link active" data-toggle="tab"><strong>North</strong></a>
+                </li>
+                <li class="nav-item tab">
+                    <a href="#west" class="nav-link" data-toggle="tab"><strong>West</strong></a>
+                </li>
+                <li class="nav-item tab">
+                    <a href="#south" class="nav-link" data-toggle="tab"><strong>South</strong></a>
+                </li>
+                <li class="nav-item tab">
+                    <a href="#east" class="nav-link" data-toggle="tab"><strong>East</strong></a>
+                </li>
+´            </ul>
+            <div class="tab-content mx-5">
+                <!--LOCATION TAB STARTS-->
+                <div class="tab-pane fade show active" id="north">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-md-10">
+                                <!--GOOGLE MAP api-->
+                                <div id="northMap" class="attraction-maps"></div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tab-content mx-5">
+                <!--LOCATION TAB STARTS-->
+                <div class="tab-pane fade show active" id="west">
+					<div class="container-fluid">
+						<div class="row my-4">
+							<div class="col-md-4 mx-auto my-auto map-container">
+                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
+                                <div id="map1" class="d-block"></div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		    
+			<div class="tab-content mx-5">
+                <!--LOCATION TAB STARTS-->
+                <div class="tab-pane fade show active" id="south">
+					<div class="container-fluid">
+						<div class="row my-4">
+							<div class="col-md-4 mx-auto my-auto map-container">
+                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
+                                <div id="map1" class="d-block"></div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tab-content mx-5">
+                <!--LOCATION TAB STARTS-->
+                <div class="tab-pane fade show active" id="east">
+					<div class="container-fluid">
+						<div class="row my-4">
+							<div class="col-md-4 mx-auto my-auto map-container">
+                                <!--GOOGLE MAP api https://developers.google.com/maps/documentation/javascript/overview-->
+                                <div id="map1" class="d-block"></div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+</section>
+        <!--put google map api here-->
+        <!--ATTRACTION SECTION ENDS-->
+        
+
         <footer>
         </footer>        
         <script src="assets/js/slideshow.js"></script>
         <script defer
 				src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDVEly0TRzO_ZK1hnjmHItf4Z0QcFmVkcU&callback=initMap">
-			</script>
-			<script src="assets/js/maps.js"> </script>
-            <script src="assets/js/weather.js"></script>
-            <script src="assets/js/translate.js"></script>
-            <script src="assets/js/charts.js"></script>
+        </script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="assets/js/main.js"> </script>
+        <script src="assets/js/maps.js"> </script>
+        <script src="assets/js/weather.js"></script>
+        <script src="assets/js/translate.js"></script>
+        <script src="assets/js/charts.js"></script>
+        <script src="assets/js/fancybox.js"></script>
     </body>
 </html>
