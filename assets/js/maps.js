@@ -9,7 +9,7 @@ function initMap() {
     //attraction maps
     var map = new google.maps.Map(document.getElementById("northMap"), {
         center: {lat: 25.0577204893041, lng: 121.52858713569131},
-        zoom: 12.5,
+        zoom: 11,
     });
     var labels = "1234567";
     var locations = [
