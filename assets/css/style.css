@@ -221,16 +221,18 @@ border-radius: 2%;
 /*---credit ends---*/
 
 /*---POPULATION---*/
-.chart-container{
+.chart-container1{
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 2%;
-    height: 25rem;
+    height: 20rem;
 }
 
+.chart-container2{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 2%;
+    
 /*---LANGUAGE---*/
-/*.goog-te-gadget {
-    text-align: right;
-}
+
 
 /*---CULTURE---*/
 
