@@ -1,8 +1,14 @@
 function initMap() {
-    var map1 = new google.maps.Map(document.getElementById("map1"), {
-        center: {lat: 23.553118, lng: 121.0211024},
-        zoom: 5,
+    var myLatLng  = {lat: 23.553118, lng: 121.0211024};
+    var map = new google.maps.Map(document.getElementById('map1'), {
+	    zoom: 4,
+	    center: myLatLng,
     });
+    new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "I am here!",
+});
 
 
 
