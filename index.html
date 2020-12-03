@@ -16,7 +16,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
       <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
+	<script type="text/javascript">
 		(function(){
              emailjs.init("user_SymNMEJn92ZzIBFoCXRIY");
          })();
@@ -490,12 +490,12 @@
             </div>
             <div class="row justify-content-center contact-container">
                 <div class="center-form col-md-6">
-                	<form onsubmit="return sendMail(this); id="form">
-						<input type="text" name="name" class="form-control mb-2" id="fullname" placeholder="Name" required/>
-						<input type="text" name="emailaddress" class="form-control  mb-2" id="emailaddress" placeholder="Email" required/>
-						<textarea rows="5" name="summary" class="form-control mb-2" id="summary" placeholder="Any questions about Taiwan is welcome!" required></textarea>
-						<button type="submit" class="btn btn-lg btn-secondary">Send!</button>
-				    </form>
+                	<form onsubmit="return sendMail(this);" id="contact-form">
+								<input type="text" name="name" class="form-control mb-2" id="fullname" placeholder="Name" required/>
+								<input type="text" name="emailaddress" class="form-control mb-2" id="emailaddress" placeholder="Email" required/>
+								<textarea rows="5" name="summary" class="form-control mb-2" id="summary" placeholder="Any questions about Taiwan is welcome!" required></textarea>
+								<button type="submit" class="btn btn-secondary center-block mb-2">Send!</button>
+							</form>
 				</div>
             </div>
       <footer>

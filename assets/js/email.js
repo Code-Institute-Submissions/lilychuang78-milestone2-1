@@ -16,8 +16,13 @@ function sendMail(contactForm) {
 	return false; // To block from loading a new page
 }
 
-$(document).ready(function(){
-  $('#form').submit(function(){
-    $('#summary').attr('placeholder','new text here');
+//https://stackoverflow.com/questions/9232810/change-placeholder-text-using-jquery//
+$(document).ready(function(){ 
+  $('form').find("textarea").each(function(ev)
+  {
+      if(!$(this).val()) { 
+     $(this).attr("placeholder", "Your message is received!");
+  }
   });
 });
+//
