@@ -364,3 +364,27 @@ cursor: zoom-in;
     border: solid 0.5rem white;
     height: 20rem;
 }
+
+/*---CONTACT---*/
+.contact-header{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-header h3{
+    text-align: center;
+    top: 50%;
+}
+
+.center-form {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.form-control {
+	font-size: 1rem;
+}

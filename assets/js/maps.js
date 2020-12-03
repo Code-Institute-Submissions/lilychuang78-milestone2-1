@@ -33,22 +33,22 @@ function initMap() {
         let contentString = 
             '<h3>'+myMarks[i].name+'</h3>'+
             '<p>'+myMarks[i].info+'</p>';
-    
+
+
         const marker = new google.maps.Marker({
             position: new google.maps.LatLng(myMarks[i].lat, myMarks[i].lng),
             map: map,
             title: myMarks[i].name
         });
 
-        const infowindow = new google.maps.infoWindow({
-            content: contentString,
-            maxwidth: 500
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString
         });
-}
-    marker.addListener("click",function(){
+
+        marker.addListener("click",function(){
         infowindow.open(map,marker);
-        infoObj[0]=infowindow;
     });
+}
 }
 
 

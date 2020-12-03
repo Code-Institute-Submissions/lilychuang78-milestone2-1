@@ -9,12 +9,18 @@
       <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
       <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-      
+      <link rel="icon" href="favicon.ico"/>
       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
       <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+		(function(){
+             emailjs.init("user_SymNMEJn92ZzIBFoCXRIY");
+         })();
+	</script>
       <title>#DiscoverTaiwan</title>
    </head>
    <body>
@@ -476,6 +482,22 @@
             </div>
       </section>
       <!--ATTRACTION SECTION ENDS-->
+
+      <!--CONTACT SECTION STARTS-->
+      <section class="container-fluid">
+            <div class="contact-header">
+                <h3 id="contact" >Contact</h3>
+            </div>
+            <div class="row justify-content-center contact-container">
+                <div class="center-form col-md-6">
+                	<form onsubmit="return sendMail(this); id="form">
+						<input type="text" name="name" class="form-control mb-2" id="fullname" placeholder="Name" required/>
+						<input type="text" name="emailaddress" class="form-control  mb-2" id="emailaddress" placeholder="Email" required/>
+						<textarea rows="5" name="summary" class="form-control mb-2" id="summary" placeholder="Any questions about Taiwan is welcome!" required></textarea>
+						<button type="submit" class="btn btn-lg btn-secondary">Send!</button>
+				    </form>
+				</div>
+            </div>
       <footer>
       </footer>
       <script src="assets/js/slideshow.js"></script>
@@ -488,6 +510,7 @@
       <script src="assets/js/translate.js"></script>
       <script src="assets/js/charts.js"></script>
       <script src="assets/js/fancybox.js"></script>
+      <script src="assets/js/email.js"> </script>
       <script src="assets/js/main.js"></script>
 
    </body>
