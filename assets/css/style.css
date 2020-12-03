@@ -17,6 +17,18 @@ padding-left: 0;
 padding-right: 0;
 }
 
+/*---UP BUTTON---*/
+
+#up-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20%;
+    cursor: pointer;
+    z-index: 3;
+}
 
 /*---NAVBAR---*/
 .navbar{
@@ -282,6 +294,7 @@ margin: 1rem 1rem;
 width: 12.5rem;
 position: relative;
 border-radius: 2%;
+cursor: zoom-in;
 }
 
 /*---ATTRACTION---*/
