@@ -22,7 +22,7 @@
 	</script>
       <title>#DiscoverTaiwan</title>
    </head>
-   <body>
+   <body class="mt-3">
       <!--NAVBAR STARTS-->
     <button onclick="topFunction()" id="up-btn" title="Go to top"><i class="fas fa-angle-double-up fa-lg"></i></button>
     <header>
@@ -363,7 +363,7 @@
                      developed into a variety of innovative cuisines influenced by Fujian, Hakka, Aboriginal people,
                      other provinces of China, Japanese and many other foreign countries. The worldknown bubble milk tea
                      was born in this island.<br>
-                     <strong>Click the cuisines! </strong><i class="fas fa-angle-double-down"></i></i>
+                     <strong>Click the cuisines! </strong><i class="fas fa-angle-double-down"></i>
                   </p>
                </div>
             </div>
@@ -488,15 +488,16 @@
                 <h3 id="contact" >Contact</h3>
             </div>
             <div class="row justify-content-center contact-container">
-                <div class="center-form col-md-6">
+                <div class="center-form col-md-6" onload="document.contact-form.emailaddress">
                 	<form onsubmit="return sendMail(this);" id="contact-form">
-								<input type="text" name="name" class="form-control mb-2" id="fullname" placeholder="Name" required/>
-								<input type="text" name="emailaddress" class="form-control mb-2" id="emailaddress" placeholder="Email" required/>
-								<textarea rows="5" name="summary" class="form-control mb-2" id="summary" placeholder="Any questions about Taiwan is welcome!" required></textarea>
-								<button type="submit" class="btn btn-secondary center-block mb-2">Send!</button>
-							</form>
+								<input type="text" name="name" class="form-control mb-4" id="fullname" placeholder="Name" required/>
+								<input type="text" name="emailaddress" class="form-control mb-4" id="emailaddress" placeholder="Email" required/>
+								<textarea rows="5" name="summary" class="form-control mb-4" id="summary" placeholder="Any questions about Taiwan is welcome!" required></textarea>
+								<button type="submit" class="btn btn-secondary center-block mb-4">Send!</button>
+					</form>
 				</div>
             </div>
+        </section>
     <!--FOOTER STARTS-->
       <footer>
         <div class="row footer-container mt-5">
@@ -534,6 +535,5 @@
       <script src="assets/js/fancybox.js"></script>
       <script src="assets/js/email.js"> </script>
       <script src="assets/js/main.js"></script>
-
    </body>
 </html>
