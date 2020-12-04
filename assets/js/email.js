@@ -1,5 +1,14 @@
 function sendMail(contactForm) {
-	emailjs.send("service_4vbdhwr", "template_pxecv3f", {
+    //prevent invalid email
+    event.preventDefault();
+	var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var email_input = $('#emailaddress').val();
+	if (email_reg.test(email_input) == false) {
+        window.alert('Please enter a valid email address.');
+        return false;
+    }
+    //send form    
+    emailjs.send("service_4vbdhwr", "template_pxecv3f", {
 		"from_name": contactForm.name.value,
 		"from_email": contactForm.emailaddress.value,
 		"message": contactForm.summary.value
@@ -8,13 +17,6 @@ function sendMail(contactForm) {
 	}, function (error) {
 		console.log("FAILED", error);
 	});
-	//prevent invalid email
-	event.preventDefault();
-	var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-	var email_input = $('#emailaddress').val();
-	if (email_reg.test(email_input) == false) {
-		window.alert('the email is invalid.')
-	}
 	contactForm.reset();
 	return false; // To block from loading a new page
 }
