@@ -420,63 +420,14 @@
       </section>
       <!--CUISINE SECTION ENDS-->
       <!--ATTRACTION SECTION STARTS-->
-      <section class="container-fluid">
+      <section class="container-fluid attraction-container">
             <div class="attraction-header">
                 <h3 id="attraction" >Attraction</h3>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-10 mb-5">
-                    <div class="attraction-tab">
-                        <button class="tablinks" onmouseover="openTab(event, 'north')">North</button>
-                        <button class="tablinks" onmouseover="openTab(event, 'west')">West</button>
-                        <button class="tablinks" onmouseover="openTab(event, 'south')">South</button>
-                        <button class="tablinks" onmouseover="openTab(event, 'south')">East</button>
-                    </div>
-                    <div id="north" class="tabcontent" style="display:block">
-                        <h4 class="mt-4 mx-5"><i class="far fa-compass fa-sm"></i> North</h4>
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 attraction-container">
-                                    <!--GOOGLE MAP api-->
-                                    <div id="northMap" class="attraction-maps mx-5"></div>
-                                </div>
-                            </div>
-					    </div>
-                    </div>
-                    <div id="west" class="tabcontent">
-                       <h4 class="mt-4 mx-5"><i class="far fa-compass fa-sm"></i> West</h4>
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 attraction-container">
-                                    <!--GOOGLE MAP api-->
-                                    <div id="westMap" class="attraction-maps mx-5"></div>
-                                </div>
-                            </div>
-					    </div>
-                    </div>
-                    <div id="south" class="tabcontent">
-                       <h4 class="mt-4 mx-5"><i class="far fa-compass fa-sm"></i> South</h4>
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 attraction-container">
-                                    <!--GOOGLE MAP api-->
-                                    <div id="southMap" class="attraction-maps mx-5"></div>
-                                </div>
-                            </div>
-					    </div>
-                    </div>
-                    <div id="East" class="tabcontent">
-                        <h4 class="mt-4 mx-5"><i class="far fa-compass fa-sm"></i> East</h4>
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 attraction-container">
-                                    <!--GOOGLE MAP api-->
-                                    <div id="eastMap" class="attraction-maps mx-5"></div>
-                                </div>
-                            </div>
-					    </div>
-                    </div>
-                    <div class="clearfix"></div>
+                <div class="col-md-8 container-fluid">
+                    <div id="attractionMap" class="attraction-maps mx-5"></div>
+
                 </div>
             </div>
       </section>
