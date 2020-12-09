@@ -18,7 +18,6 @@ function initMap() {
         center: { lat: 23.68809365325875, lng: 120.8485944583739 },
         zoom: 8,
     });
-
     const myMarks = [
         {   /*image taken from https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E5%8C%97101%E8%B7%A8%E5%B9%B4%E7%85%99%E7%81%AB_Taipei_101_New_Year_Firework_-_panoramio_(1).jpg*/
             "lat": 25.03419956532007,
@@ -27,20 +26,6 @@ function initMap() {
             "name": "Taipei 101",
             "info": "The Taipei 101 was officially classified as the world's tallest from 2004 to 2010. Its elevators transports passengers from the 5th to 89th floor in 37 seconds. It is an icon of Taipei and a firework event displays on each year's New Year's Eve." 
         },
-        {   /*image taken from https://www.pikrepo.com/nbyma/view-of-raohe-st-night-market-arch-with-kanji-texts-and-group-of-people*/
-            "lat": 25.05693515585312,
-            "lng": 121.57842433564831,
-            "img": "assets/images/raohe_nightmarket.jpg",
-            "name": "Raohe Street Night Market",
-            "info": "Raohe Street Night Market is 600 meters length night market. There are various shops and typical Taiwanese stands. It presents Taiwanese characteristic and is must-go place to visit." 
-        },
-        {   /*image taken from https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_memorial_amk.jpg*/
-            "lat": 25.037728675921908, 
-            "lng": 121.49963176844233, 
-            "img": "assets/images/memorial_hall.jpg", 
-            "name": "Chiang Kai-Shek Memorial Hall", 
-            "info": "The great building is the attraction most visited by foreign visitors. The colors of the architecture, blue, white and red represents the National Flag of Taiwan and of freedom, equality and brotherhood." 
-        },
         {   /*image taken from https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_National-Palace-Museum-02.jpg*/
             "lat": 25.102492849619917, 
             "lng": 121.54848912927098,
@@ -48,7 +33,21 @@ function initMap() {
             "name": "National Palace Museum", 
             "info": "The National Palace Museum holds the world's largest collection of Chinese treasures and arts which spans 5000 year history. Most of the over 600,000 collections were the Chinese imperial collection, which started from Song dznasty 1000 years ago." 
         },
-                {   /*image taken from https://commons.wikimedia.org/wiki/File:A-Mei_Tea_House_in_Jiufen.jpg*/
+        {   /*image taken from https://commons.wikimedia.org/wiki/File:%E6%96%B0%E7%AB%B9%E7%81%AB%E8%BB%8A%E7%AB%99(%E5%B7%B4%E6%B4%9B%E5%85%8B%E9%A2%A8%E6%A0%BC).jpg*/
+            "lat": 24.801568205538437,
+            "lng": 120.97155611083635,
+            "img": "assets/images/xingchu_station.jpg",
+            "name": "Xingchu Train Station",
+            "info": "The current station building was completed in 1913. The architectural style combines the Baroque style and the Gothic style. It is the oldest active station in Taiwan." 
+        },
+        {   /*image taken from https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E5%AE%B6%E8%A1%A8%E6%BC%94%E8%97%9D%E8%A1%93%E4%B8%AD%E5%BF%83-%E8%87%BA%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%AD%8C%E5%8A%87%E9%99%A2%E5%A4%96%E8%A7%80.jpg*/
+            "lat": 24.162786228241615, 
+            "lng": 120.64024915315206,
+            "img": "assets/images/opera_house.jpg", 
+            "name": "Taichung Opera House", 
+            "info": "The Opera House is based on the concept of a sound Cave, designed by world-class architect Toyohio Ito, and is considered the most difficult house in the world in the industry." 
+        },
+        {   /*image taken from https://commons.wikimedia.org/wiki/File:A-Mei_Tea_House_in_Jiufen.jpg*/
             "lat": 25.110269556941518, 
             "lng": 121.84513433614752,
             "img": "assets/images/jiufen.jpg", 
@@ -83,12 +82,12 @@ function initMap() {
             "name": "Sicao Green Tunnel", 
             "info": "Sicao Green Tunnel is a mangrove forest reaches over the water to form a tunnel. The river surface reflects the green tunnel and makes a dream-like waterway." 
         },
-        {   /*image taken from https://de.m.wikipedia.org/wiki/Datei:Tainan_Taiwan_Fort-Zeelandia-01.jpg*/
-            "lat": 23.000049255860482,
-            "lng": 120.15940953963586,
-            "img": "assets/images/zeelandia.jpg", 
-            "name": "Fort Zeelandia", 
-            "info": "Anping Old Fort, also known as Relanzhe City, is a fortress that once existed in Tainan, Taiwan. Originally built in 1624, it was the earliest fortress building in Taiwan build by the Dutch colonizer." 
+        {   /*image taken from https://en.wikipedia.org/wiki/Lukang,_Changhua#/media/File:%E9%B9%BF%E6%B8%AF%E8%80%81%E8%A1%97%E5%B0%8F%E5%B7%B707.jpg*/
+            "lat": 24.06003085163009,
+            "lng": 120.4313499195485,
+            "img": "assets/images/lukang.jpg", 
+            "name": "Lukang Old Town", 
+            "info": "Lugang is an important town where Han families migrated in the Qing Dynasty. It is one of the few ancient towns in Taiwan that retains complete Han customs, culture, cultural relics, and historic sites." 
         },
         {   /*image taken from https://de.m.wikipedia.org/wiki/Datei:Kenting_Hengchun-Township_Taiwan_Beach-01.jpg*/
             "lat": 21.948317794460866, 
@@ -97,12 +96,12 @@ function initMap() {
             "name": "Kengding Beach", 
             "info": "Taiwan’s first national park is also a seaside attraction with both beaches and hiking trails." 
         },
-        {   /*image taken from https://cyberisland.teldap.tw/P/qHUgiNSuwis*/
-            "lat": 21.908427699197684, 
-            "lng": 120.85355878593714,
-            "img": "assets/images/lighthouse.jpg", 
-            "name": "Eluanbi Lighthouse", 
-            "info": "This 19th-century lighthouse is housed in a fortress-like building with sea views and a museum." 
+        {   /*image taken from https://cyberisland.teldap.tw/P/qzwciydadGQ*/
+            "lat": 22.680622167633427, 
+            "lng": 120.29246232613674,
+            "img": "assets/images/tiger_dragan_pagoda.jpg",
+            "name": "Dragon and Tiger Pagoda", 
+            "info": "The Dragon Tiger Pagoda was built in 1976. It uses the dragon and tiger as the entrance and the inner wall is a Jiaozhi pottery." 
         },
         {   /*image taken from https://commons.wikimedia.org/wiki/File:Lisong_Hot_Spring.jpg*/
             "lat": 23.198214388114735, 
@@ -127,7 +126,6 @@ function initMap() {
         },
     ];
 
-
     var InfoObj = [];
 
     for (i = 0; i < myMarks.length; i++) {
@@ -143,7 +141,8 @@ function initMap() {
             map: map,
             title: myMarks[i].name
         });
-
+        
+        
         const infowindow = new google.maps.InfoWindow({
             content: contentString
         });
