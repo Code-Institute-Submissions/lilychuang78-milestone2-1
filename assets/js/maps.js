@@ -1,3 +1,6 @@
+/*---credit: code referred to tutorial of Eamonn Smyth "How to google maps"
+https://code-institute-room.slack.com/files/UU5GBNS6M/F01DRAEPEH5/how_to_google_maps.pdf---*/
+
 function initMap() {
     const myLatLng = { lat: 23.553118, lng: 121.0211024 };
     map1 = new google.maps.Map(document.getElementById('map1'), {
