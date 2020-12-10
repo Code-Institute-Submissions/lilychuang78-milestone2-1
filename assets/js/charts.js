@@ -1,5 +1,5 @@
 //POPULATION SECTION chart1 
-//population data taken from https://www.ris.gov.tw/app/portal/346
+//population data taken from Department of Household Registration, Taiwan https://www.ris.gov.tw/app/portal/346
 var ctx = document.getElementById("chart1").getContext('2d');
 var chart1 = new Chart(ctx, {
     type: 'line',
@@ -30,7 +30,7 @@ var chart1 = new Chart(ctx, {
 
 
 //BUSINESS SECTION chart2
-//survey data taken from https://www.internations.org/press/press-release/expat-insider-2019-survey-reveals-the-best-and-worst-destinations-to-live-and-work-in-2019-39881
+//survey data taken from InterNations https://www.internations.org/press/press-release/expat-insider-2019-survey-reveals-the-best-and-worst-destinations-to-live-and-work-in-2019-39881
 var data = {
   labels: [
     "Affordable healthcare",

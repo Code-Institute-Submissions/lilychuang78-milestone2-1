@@ -1,4 +1,4 @@
- /*credit: https://codepen.io/fancyapps/pen/vzoPMB?editors=1010*/
+ /*credit: Codepen https://codepen.io/fancyapps/pen/vzoPMB?editors=1010*/
 
 $('[data-fancybox="images"]').fancybox({
   buttons : [ 

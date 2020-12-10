@@ -1,4 +1,4 @@
-//credit: inspired by https://www.w3schools.com/howto/howto_google_translate.asp
+//credit: w3school https://www.w3schools.com/howto/howto_google_translate.asp
 let translate;
 function googleTranslateElementInit() {
     translate =  new google.translate.TranslateElement({
