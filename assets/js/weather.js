@@ -1,6 +1,7 @@
 //credit:
 //https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
 //https://codepen.io/tutsplus/details/gObLaEP
+//API: https://openweathermap.org/
 const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
