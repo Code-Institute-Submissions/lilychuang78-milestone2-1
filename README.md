@@ -79,7 +79,7 @@ The skeleton plane was created using Balsamiq Wireframes.
         - In Business section, both Taiwan and Global scores in Expat Insider survey in the chart can be displayed when the cursor hovers over [(see)](assets/images/readme/business.png).
     -  Cuisines images can be zoom in. The names of the cuisines are displayed after zooming in.
     -  In Attraction section, markers on the Google Map are clickable. An info window shows up with image and description [(see)](assets/images/readme/infowindow.png). A link is provided to link to an external website and opens a separate webpage. The info window can be closed by clicking the x icon.
-    -  The contact form can be used only when all the input sections are all filled and with a correct formatted email, then the form can be sent. Otherwise, there are alerts which reminds the users. [See](assets/images/readme/email_alert1.png) and [here](assets/images/readme/email_alert2.png) of the alerts.   
+    -  The contact form can be used only when all the input sections are all filled and with a correct formatted email, then the form can be sent. Otherwise, there are alerts which reminds the users. [See](assets/images/readme/email_alert1.png) and [here](assets/images/readme/email_alert2.png) of the alerts.   
     -  The social media icons can link to separate webpage of the social media website, instead of replacing the current webpage.
 4. Lighthouse, a Google Chrome extension was downloaded and is used to test the accessibility [(see)](assets/images/readme/lighthouse.png).
 5. Google Chrome Developer Tool was used to test whether the website is displayed as wished in different devices including smartphone, iPad and responsive desktops.
