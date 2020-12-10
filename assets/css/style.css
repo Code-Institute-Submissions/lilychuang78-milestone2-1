@@ -258,10 +258,7 @@ html, body {
 	padding: 3rem;
 	background: rgba(255, 255, 255, 0.85);
 	overflow: scroll;
-	-ms-overflow-style: none;
-	/*hide scrollbar for IE*/
-	scrollbar-width: none;
-	/*hide scrollbar for Firefox */
+	-ms-overflow-style: none; /*hide scrollbar for IE*/
 }
 .article::-webkit-scrollbar {
 	display: none;
