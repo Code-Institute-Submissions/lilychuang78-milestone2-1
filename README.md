@@ -44,7 +44,14 @@ The skeleton plane was created using Balsamiq Wireframes.
 ### Languages
 1. HTML: HTML5 is used to structure the website.
 2. CSS: it is widely used to style the website.
-3. JavaScript: it is used for interactive purpose of the website.
+3. JavaScript: it is used for interactive purposes of the website.
+    - hero image slide show
+    - Google Maps
+    - real time weather app
+    - Google Translate
+    - Interactive charts
+    - contact form
+    - go to the top button
 ### Libraries
 1. [Bootstrap 4](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Bootstrap class are used throughout the website. Bootstrap grid is used to implement responsive display on different devices.
 2. [FANCYBOX](https://fancyapps.com/fancybox/3/): it is used to display cuisine images and allows the users to click to see a bigger picture. It is also used to allow the users to click and view a YouTube video in the section "Info", subsection of "Culture".  
@@ -82,7 +89,7 @@ The skeleton plane was created using Balsamiq Wireframes.
     -  The contact form can be used only when all the input sections are all filled and with a correct formatted email, then the form can be sent. Otherwise, there are alerts which reminds the users. [See](assets/images/readme/email_alert1.png) and [here](assets/images/readme/email_alert2.png) of the alerts.   
     -  The social media icons can link to separate webpage of the social media website, instead of replacing the current webpage.
 4. Lighthouse, a Google Chrome extension was downloaded and is used to test the accessibility [(see)](assets/images/readme/lighthouse.png).
-5. Google Chrome Developer Tool was used to test whether the website is displayed as wished in different devices including smartphone, iPad and responsive desktops.
+5. Google Chrome Developer Tool was used to test whether the website is displayed as wished in different devices including smartphone, iPad and responsive desktops.
 6. Manual Testing
     1. not finished
 
