@@ -25,7 +25,7 @@ The website is responsive and can be navigated within the website with different
 4. Google font family "Castoro" is used as the font throughout the website. When it is not available "serif" is replaced.
 
 ## Wireframe
-The skeleton plane was created using Balsamiq Wireframes. Wireframes can be found [here](wireframe.md)
+The skeleton plane was created using Balsamiq Wireframes. Wireframes can be found [here](wireframe.md).
 
 ## Features
 1. Navigation bar allows users to click and jump to different sections of the website without having to scroll down the pages. When the display is small as a smartphone, a drop down menu is displayed in the navigation bar.
@@ -108,20 +108,65 @@ The skeleton plane was created using Balsamiq Wireframes. Wireframes can be foun
     - Galxy Fold
     - DELL Laptop Latitude 5490 
 6. Manual Testing
-    - Navigation bar: I am able to click on all the menu and am able to direct to different sections of the website. "**#DiscoverTaiwan**" function as the home page button. The navigation bar always remains at the top of the screen. I am able to click on any menus to redirect when I am at anywhere of the webpage.
-    - Hero image slideshow: The slideshow consists of four images. They change smoothly without any loading issues.
+    - Navigation bar:
+        - I am able to click on all the menu and am able to direct to different sections of the website.
+        - "**#DiscoverTaiwan**" function as the home page button. The navigation bar always remains at the top of the screen. I am able to click on any menus to redirect when I am at anywhere of the webpage.
+    - Hero image slideshow:
+        - The slideshow consists of four images. They change smoothly without any loading issues.
     - Info tabs: I am able to click on every tab and the content change without issues.
-        - Location: The Google Map is loaded without issues. I can zoom in and out and center the map to other location. When I hover the cursor to the marker. A message of "I am here!" is shown. There is a link to Wikipedia with specific content relating to the location of Taiwan. It can be open with separate website so the current website remains and is not replaced.
-        - Climate: I can enter any cities in the "Check the Weather" app. It does not have to be a city in Taiwan, although the placeholder suggests the users to enter "Taipei". After entering the name of the city, the city name, current temperature, weather, and weather icon are displayed beneath. When I enter another city name, the current city name is replaced without any issues. There is a link to Wikipedia with specific content relating to the climate of Taiwan. It can be open with separate website so the current website remains and is not replaced.
-        - Population: When I hover the cursor to the dots of the chart, an info window with population data and correspondent year appears. There is a link to Wikipedia with specific content relating to the population of Taiwan. It can be open with separate website so the current website remains and is not replaced.
-        - Language: I can translate the website to traditional Chinese using Google Translate. Google Translate bar appear at the top of the screen, which allows me to revert the website back to English. However, I have to click the close icon to close the bar in order to see the navigation bar again. There is a link to Wikipedia with specific content relating to the language of Taiwan. It can be open with separate website so the current website remains and is not replaced.
-        - Culture: An YouTube video is displayed when I click on the image with a hint of "Click the image to view a video!" beneath. I am able to terminate the video by clicking the close x icon. The webpage remains at the same location without being refreshed. The same video can be directed and opened in a separate website when clicking on the link beneath as well. There is a link to Wikipedia with specific content relating to the culture of Taiwan. It can be open with separate website so the current website remains and is not replaced.
-        - Business: When I hover the cursor to the bars of the chart, an info window with labels and scores are displayed. Two links directing to Wikipedia and The News Lens are opened into separated websites by clicking, which do not replace the current web page.
-        - Cuisine: When I hover the cursor on the images of cuisine, the cursor icon automatically changed to "zoom in" icon. When I click on the image, the image becomes bigger and center on the desktop with a transparent gray background. There is a name of the cuisine beneath the image. On the top left, I can see how many images are there and the current order number of the selected image. In the top right corner, I can use "display slideshow", "share", "zoom", "full screen" and "close" functions provided by FANCYBOX API. On the right side of the screen, all the images are displayed, so I can click on any of them to view and use the mentioned functions. When I close the zoomed in image, the webpage goes back to the page without being refreshed.
-    - Attraction: When I click on "Geography" and "Satellite" view on the left top corner of the map, the map changed itself into geographic and satellite views without issues. When I click on the "display full screen" icon which is in right top corner of the map, the map can be displayed full screen. I click on the markers of the map, I can view an info window that contains an image, the name of the place, description of the place and a link to an external webpage called "The Heart of Asia" without any issues. I have to close the info window by clicking the close x icon, otherwise the info window is overlapped. The screen moves slightly downward whenever I close an info window, so I use the cursor to move the map. I am able to zoom in and zoom out the map using + and - icon. Also moving the map to center different location is possible. The small person icon on the left bottom corner allows me to view street view. 
-    - Contact: The contact form has placeholder of "Name", "Email" and "Any questions about Taiwan is welcome!", so I am able to understand what I enter in which input box. I have to enter every input in order to send out the form, otherwise a message is displayed to remind me not to leave the entry empty. I also have to enter a valid email address with @ sign, or an alert of "Please enter a valid email address." is also shown on the top of the desktop. After I submit the form, the placeholder of "Any questions about Taiwan is welcome!" changes to "your message is received.". The submitted form content is redirected to my email address via Email.js service automatically without any issues.
-    - Footer: There are three social media icons in the footer, which re-direct to separated webpages of Facebook, Instagram and YouTube respectively. They do not replace the current webpage.
-    - Go-back-to-top button. The go-back-to-top button is located on the right button of the page. When I scroll the page, the icon remains on the same position. When I click the icon, the page scrolls back to the top, which has the same function when clicking "#Discover Taiwan" as a home button.
+        - Location:
+            - The Google Map is loaded without issues. I can zoom in and out and center the map to other location.
+            - When I hover the cursor to the marker. A message of "I am here!" is shown.
+            - There is a link to Wikipedia with specific content relating to the location of Taiwan. It can be open with separate website so the current website remains and is not replaced.
+        - Climate:
+            - I can enter any cities in the "Check the Weather" app. It does not have to be a city in Taiwan. The placeholder suggests the users to enter "Taipei". After entering the name of the city, the city name, current temperature, weather, and weather icon are displayed beneath.
+            - When I enter another city name, the current city name is replaced without any issues.
+            - There is a link to Wikipedia with specific content relating to the climate of Taiwan. It can be open with separate website so the current website remains and is not replaced.
+        - Population:
+            - When I hover the cursor to the dots of the chart, an info window with population data and correspondent year appears.
+            - There is a link to Wikipedia with specific content relating to the population of Taiwan. It can be open with separate website so the current website remains and is not replaced.
+        - Language:
+            - I can translate the website to traditional Chinese using Google Translate.
+            - Google Translate bar also appears at the top of the screen, which allows me to revert the website back to English.
+            - However, I have to click the close icon to close the bar in order to see the navigation bar again.
+            - There is a link to Wikipedia with specific content relating to the language of Taiwan. It can be open with separate website so the current website remains and is not replaced.
+        - Culture:
+            - An YouTube video is displayed when I click on the image with a hint of "Click the image to view a video!" beneath.
+            - I am able to terminate the video by clicking the close x icon. The webpage remains at the same location without being refreshed.
+            - The same video can be directed and opened in a separate website when clicking on the link beneath as well.
+            - There is a link to Wikipedia with specific content relating to the culture of Taiwan. It can be open with separate website so the current website remains and is not replaced.
+        - Business:
+            - When I hover the cursor to the bars of the chart, an info window with labels and scores are displayed.
+            - Two links directing to Wikipedia and The News Lens are opened into separated websites by clicking, which do not replace the current web page.
+    - Cuisine:
+        - When I hover the cursor on the images of cuisine, the cursor icon automatically changed to "zoom in" icon.
+        - When I click on the image, the image becomes bigger and center on the desktop with a transparent gray background.
+        - There is a name of the cuisine beneath the image.
+        - On the top left, I can see how many images are there and the current order number of the selected image.
+        - On the top right corner, I can use "display slideshow", "share", "zoom", "full screen" and "close" functions.
+        - On the right side of the screen, all the images are displayed, so I can click on any of them to view and use the mentioned functions.
+        - When I close the zoomed in image, the webpage goes back to the page without being refreshed.
+    - Attraction:
+        - When I click on "Geography" and "Satellite" view on the left top corner of the map, the map changed itself into geographic and satellite views without issues.
+        - When I click on the "full screen" icon which is in right top corner of the map, the map can be displayed full screen.
+        - I click on the markers of the map, I can view an info window that contains an image, the name of the place, description of the place.
+        - A link to an external webpage called "The Heart of Asia" opens without any issues.
+        - I have to close the info window by clicking the close x icon, otherwise the info window is overlapped.
+        - The screen moves slightly downward whenever I close an info window, so I use the cursor to move the map.
+        - I am able to zoom in and zoom out the map using + and - icon and move the map.
+        - The small person icon on the left bottom corner allows me to see street view. 
+    - Contact:
+        - The contact form displays placeholder of "Name", "Email" and "Any questions about Taiwan is welcome!"
+        - I have to enter every input in order to send out the form, otherwise an alert is displayed.
+        - I also have to enter a valid email address which contains @ sign, or an alert of "Please enter a valid email address" appears on the top of the screen.
+        - After I submit the form, the placeholder of "Any questions about Taiwan is welcome!" changes to "your message is received.".
+        - The submitted form content is received in my email account via Email.js service automatically without any issues.
+    - Footer:
+        - There are three social media icons in the footer, which re-direct to separated webpages of Facebook, Instagram and YouTube respectively.
+        - The links do not replace the current webpage.
+    - Go-back-to-top button:
+        - The go-back-to-top button remains at the same right bottom position even when scrolling.
+        - When I click the icon, the page scrolls back to the top.
 
 ## Deployment
 1. In the GitHub repository of [milestone2-1](https://github.com/lilychuang78/milestone2-1), click on "Setting".![setting](assets/images/readme/deploy1.png)
