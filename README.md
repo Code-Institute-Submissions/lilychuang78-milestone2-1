@@ -25,28 +25,7 @@ The website is responsive and can be navigated within the website with different
 4. Google font family "Castoro" is used as the font throughout the website. When it is not available "serif" is replaced.
 
 ## Wireframe
-The skeleton plane was created using Balsamiq Wireframes.
-- Home page <br>
-![Home Page](assets/images/readme/wireframe/home_page.png)
-- Info
-    - Location <br>
-    ![Location](assets/images/readme/wireframe/location.png)
-    - Climate <br>
-    ![Climate](assets/images/readme/wireframe/climate.png)
-    - Population <br>
-    ![Population](assets/images/readme/wireframe/population.png)
-    - Language <br>
-    ![Language](assets/images/readme/wireframe/language.png)
-    - Culture <br>
-    ![Culture](assets/images/readme/wireframe/culture.png)
-    - Business <br>
-    ![Business](assets/images/readme/wireframe/business.png)
-- Cuisine <br>
-![Cuisine](assets/images/readme/wireframe/cuisine.png)
-- Attraction <br>
-![Attraction](assets/images/readme/wireframe/attraction.png)
-- Contact <br>
-![Contact](assets/images/readme/wireframe/contact.png)
+The skeleton plane was created using Balsamiq Wireframes. Wireframes can be found [here](wireframe.md)
 
 ## Features
 1. Navigation bar allows users to click and jump to different sections of the website without having to scroll down the pages. When the display is small as a smartphone, a drop down menu is displayed in the navigation bar.
