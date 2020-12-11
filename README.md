@@ -1,4 +1,4 @@
-<img src="assets/images/taipei_101.jpg" alt="Taipei 101" width=100% height="300">
+<img src="assets/images/Taipei_101.jpg" alt="Taipei 101" width=100% height="300">
 
 # **#Discover Taiwan Website**
 
