@@ -93,20 +93,23 @@ The skeleton plane was created using Balsamiq Wireframes. Wireframes can be foun
     - The contact form can be used only when all the input sections are all filled and with a correct formatted email, then the form can be sent. Otherwise, there are alerts which reminds me not to leave an empty or invalid entry. [See](assets/images/readme/email_alert1.png) and [here](assets/images/readme/email_alert2.png) of the alerts.   
     - The social media icons can link to separate webpage of the social media website, instead of replacing the current webpage.
 4. Lighthouse, a Google Chrome extension was downloaded and is used to test the accessibility [(see)](assets/images/readme/lighthouse.png).
-5. Google Chrome Developer Tool was used to test whether the website is displayed as wished in different devices.
-    - Moto G4
-    - Galaxy S5
-    - Pixel 2
-    - Pixel 2 XL
-    - iPhone 5/SE
-    - iPhone 6/7/8
-    - iPhone 6/7/8 Plus
-    - iPhone X
-    - iPad
-    - iPad Pro
-    - Surface Duo
-    - Galxy Fold
-    - DELL Laptop Latitude 5490 
+5. Google Chrome Developer Tool was used.
+    - whether the website is displayed responsively different devices.
+        - Moto G4
+        - Galaxy S5
+        - Pixel 2
+        - Pixel 2 XL
+        - iPhone 5/SE
+        - iPhone 6/7/8
+        - iPhone 6/7/8 Plus
+        - iPhone X
+        - iPad
+        - iPad Pro
+        - Surface Duo
+        - Galxy Fold
+        - DELL Laptop Latitude 5490 
+    - console does not show any errors.
+        - [see](assets/images/readme/console.png)
 6. Manual Testing
     - Navigation bar:
         - I am able to click on all the menu and am able to direct to different sections of the website.
@@ -120,14 +123,15 @@ The skeleton plane was created using Balsamiq Wireframes. Wireframes can be foun
             - There is a link to Wikipedia with specific content relating to the location of Taiwan. It can be open with separate website so the current website remains and is not replaced.
         - Climate:
             - I can enter any cities in the "Check the Weather" app. It does not have to be a city in Taiwan. The placeholder suggests the users to enter "Taipei". After entering the name of the city, the city name, current temperature, weather, and weather icon are displayed beneath.
-            - When I enter another city name, the current city name is replaced without any issues.
+            - When I enter another city name and press enter button, the current city name is replaced without any issues.
+            - When I enter an invalid city name and press enter button, an alert "Please enter a valid city." appears. 
             - There is a link to Wikipedia with specific content relating to the climate of Taiwan. It can be open with separate website so the current website remains and is not replaced.
         - Population:
             - When I hover the cursor to the dots of the chart, an info window with population data and correspondent year appears.
             - There is a link to Wikipedia with specific content relating to the population of Taiwan. It can be open with separate website so the current website remains and is not replaced.
         - Language:
             - I can translate the website to traditional Chinese using Google Translate.
-            - Google Translate bar also appears at the top of the screen, which allows me to revert the website back to English.
+            - Google Translate bar also appears at the top of the screen, which allows me to revert the website back to English by click the close x icon or "show original".
             - However, I have to click the close icon to close the bar in order to see the navigation bar again.
             - There is a link to Wikipedia with specific content relating to the language of Taiwan. It can be open with separate website so the current website remains and is not replaced.
         - Culture:
@@ -144,6 +148,7 @@ The skeleton plane was created using Balsamiq Wireframes. Wireframes can be foun
         - There is a name of the cuisine beneath the image.
         - On the top left, I can see how many images are there and the current order number of the selected image.
         - On the top right corner, I can use "display slideshow", "share", "zoom", "full screen" and "close" functions.
+        - I can also see the previous and next image by clicking left and right arrows by the side of the image.
         - On the right side of the screen, all the images are displayed, so I can click on any of them to view and use the mentioned functions.
         - When I close the zoomed in image, the webpage goes back to the page without being refreshed.
     - Attraction:
