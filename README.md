@@ -27,26 +27,26 @@ The website is responsive and can be navigated within the website with different
 ## Wireframe
 The skeleton plane was created using Balsamiq Wireframes.
 - Home page <br>
-![Home Page](assets/image/readme/wireframe/home.png)
+![Home Page](assets/images/readme/wireframe/home.png)
 - Info
     - Location <br>
-    ![Location](assets/image/readme/wireframe/location.png)
+    ![Location](assets/images/readme/wireframe/location.png)
     - Climate <br>
-    ![Climate](assets/image/readme/wireframe/climate.png)
+    ![Climate](assets/images/readme/wireframe/climate.png)
     - Population <br>
-    ![Population](assets/image/readme/wireframe/population.png)
+    ![Population](assets/images/readme/wireframe/population.png)
     - Language <br>
-    ![Language](assets/image/readme/wireframe/language.png)
+    ![Language](assets/images/readme/wireframe/language.png)
     - Culture <br>
-    ![Culture](assets/image/readme/wireframe/culture.png)
+    ![Culture](assets/images/readme/wireframe/culture.png)
     - Business <br>
-    ![Business](assets/image/readme/wireframe/business.png)
+    ![Business](assets/images/readme/wireframe/business.png)
 - Cuisine <br>
-![Cuisine](assets/image/readme/wireframe/cuisine.png)
+![Cuisine](assets/images/readme/wireframe/cuisine.png)
 - Attraction <br>
-![Attraction](assets/image/readme/wireframe/attraction.png)
+![Attraction](assets/images/readme/wireframe/attraction.png)
 - Contact <br>
-![Contact](assets/image/readme/wireframe/contact.png)
+![Contact](assets/images/readme/wireframe/contact.png)
 
 ## Features
 1. Navigation bar allows users to click and jump to different sections of the website without having to scroll down the pages. When the display is small as a smartphone, a drop down menu is displayed in the navigation bar.
