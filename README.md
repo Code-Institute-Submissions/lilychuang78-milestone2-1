@@ -1,5 +1,10 @@
-## #Discover Taiwan Website
-You can find the deployed website [here](https://lilychuang78.github.io/milestone2-1/.).<br/>
+![Sanxiantai](assets/images/readme/sanxiantai.jpg)
+
+# **#Discover Taiwan Website**
+
+## Introduction
+This is the repository for **#Discover Taiwan** website.
+The deployed version of the website can be found [here](https://lilychuang78.github.io/milestone2-1/.).<br/>
 This website is to give background information about Taiwan and trigger users' interest to want to visit Taiwan one day in the future.</br>
 General information people might be interested are shown in the content. For instance, the location of Taiwan, climate, population, language, culture and business and such.<br/>
 For people who are further interested in visiting Taiwan, I believe cuisine and attraction are the most interesting topics people would want to find out. Therefore, there are two separate sections specifically for these purposes.<br/>
@@ -89,7 +94,20 @@ The skeleton plane was created using Balsamiq Wireframes.
     -  The contact form can be used only when all the input sections are all filled and with a correct formatted email, then the form can be sent. Otherwise, there are alerts which reminds the users. [See](assets/images/readme/email_alert1.png) and [here](assets/images/readme/email_alert2.png) of the alerts.   
     -  The social media icons can link to separate webpage of the social media website, instead of replacing the current webpage.
 4. Lighthouse, a Google Chrome extension was downloaded and is used to test the accessibility [(see)](assets/images/readme/lighthouse.png).
-5. Google Chrome Developer Tool was used to test whether the website is displayed as wished in different devices including smartphone, iPad and responsive desktops.
+5. Google Chrome Developer Tool was used to test whether the website is displayed as wished in different devices.
+    - Moto G4
+    - Galaxy S5
+    - Pixel 2
+    - Pixel 2 XL
+    - iPhone 5/SE
+    - iPhone 6/7/8
+    - iPhone 6/7/8 Plus
+    - iPhone X
+    - iPad
+    - iPad Pro
+    - Surface Duo
+    - Galxy Fold
+    - DELL Laptop Latitude 5490 
 6. Manual Testing
     1. not finished
 
