@@ -13,7 +13,7 @@ The website is responsive and can be navigated within the website with different
 ## User Stories
 1. As a user, I want to navigate the website without problems.
 2. As a user, I want to find out information about Taiwan.
-3. As a user, I want to know what type of cuisines is famous in Taiwan.
+3. As a user, I want to know what type of cuisine is famous in Taiwan.
 4. As a user, I want to know what attractions and where in Taiwan are worth visiting.
 5. As a user, I want to be able to leave a comment or question using a contact form.
 6. As a user, I want to know if the website has external links to social media.
@@ -26,7 +26,27 @@ The website is responsive and can be navigated within the website with different
 
 ## Wireframe
 The skeleton plane was created using Balsamiq Wireframes.
-<img src="wireframe.png" alt="wireframes"/>
+- Home page <br>
+![Home Page](assets/image/readme/wireframe/home.png)
+- Info
+    - Location <br>
+    ![Location](assets/image/readme/wireframe/location.png)
+    - Climate <br>
+    ![Climate](assets/image/readme/wireframe/climate.png)
+    - Population <br>
+    ![Population](assets/image/readme/wireframe/population.png)
+    - Language <br>
+    ![Language](assets/image/readme/wireframe/language.png)
+    - Culture <br>
+    ![Culture](assets/image/readme/wireframe/culture.png)
+    - Business <br>
+    ![Business](assets/image/readme/wireframe/business.png)
+- Cuisine <br>
+![Cuisine](assets/image/readme/wireframe/cuisine.png)
+- Attraction <br>
+![Attraction](assets/image/readme/wireframe/attraction.png)
+- Contact <br>
+![Contact](assets/image/readme/wireframe/contact.png)
 
 ## Features
 1. Navigation bar allows users to click and jump to different sections of the website without having to scroll down the pages. When the display is small as a smartphone, a drop down menu is displayed in the navigation bar.
@@ -89,7 +109,7 @@ The skeleton plane was created using Balsamiq Wireframes.
         - In Language section, the website can be translated using Google translation with traditional Chinese option. [(see)](assets/images/readme/translation1.png) And the website can be reverted to English by clicking "show original" [(see)](assets/images/readme/translation2.png). The automatically appeared bar can be removed by clicking x icon.
         - In Culture section, I am able to understand the culture of Taiwan by reading the description and even more by watching an YouTube video [(see)](assets/images/readme/video.png). And I am able to close the video by clicking x icon when I don't want to watch anymore.
         - In Business section, both Taiwan and Global scores in Expat Insider survey in the chart can be displayed when the cursor hovers over [(see)](assets/images/readme/business.png). I am able to compare the scores of Taiwan and Global, which are easily distinguishable because of the presented green and red color bars.
-    - Cuisines images can be zoom in. I can see the name of the cuisines. The images can be displayed as a slideshow, full screen and further zooming to see the details of the cuisines. When I want to go back to the page, I can close it by clicking close x icon.
+    - Cuisine images can be zoom in. I can see the name of the cuisines. The images can be displayed as a slideshow, full screen and further zooming to see the details of the cuisines. When I want to go back to the page, I can close it by clicking close x icon.
     - In Attraction section, markers on the Google Map are clickable. An info window shows up. I am able to see the name of the place, image and description of the place [(see)](assets/images/readme/infowindow.png). A link is provided to link to an external website and opens a separate touristic webpage, so I can search more information by entering keywords. When I want to see other info window of other places, I have to close the window first, otherwise they might be overlapped. The info window can be closed by clicking the x icon.
     - The contact form can be used only when all the input sections are all filled and with a correct formatted email, then the form can be sent. Otherwise, there are alerts which reminds me not to leave an empty or invalid entry. [See](assets/images/readme/email_alert1.png) and [here](assets/images/readme/email_alert2.png) of the alerts.   
     - The social media icons can link to separate webpage of the social media website, instead of replacing the current webpage.
