@@ -1,4 +1,4 @@
-![Sanxiantai](assets/images/readme/sanxiantai.jpg)
+<img src="assets/images/taipei_101.jpg" alt="Taipei 101" width=100% height="300">
 
 # **#Discover Taiwan Website**
 
@@ -27,7 +27,7 @@ The website is responsive and can be navigated within the website with different
 ## Wireframe
 The skeleton plane was created using Balsamiq Wireframes.
 - Home page <br>
-![Home Page](assets/images/readme/wireframe/home.png)
+![Home Page](assets/images/readme/wireframe/home_page.png)
 - Info
     - Location <br>
     ![Location](assets/images/readme/wireframe/location.png)
