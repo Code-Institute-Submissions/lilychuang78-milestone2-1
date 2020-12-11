@@ -109,7 +109,7 @@ The skeleton plane was created using Balsamiq Wireframes. Wireframes can be foun
         - Galxy Fold
         - DELL Laptop Latitude 5490 
     - console does not show any errors.
-        - [see](assets/images/readme/console.png)
+        - [see](assets/images/readme/console.png).
 6. Manual Testing
     - Navigation bar:
         - I am able to click on all the menu and am able to direct to different sections of the website.
@@ -198,4 +198,4 @@ The skeleton plane was created using Balsamiq Wireframes. Wireframes can be foun
 3. Info window images and other images are taken from [Google Images](https://images.google.de/) filters with creative common license ![create common license](assets/images/readme/google_image.png)
 4. The video on Culture section is taken from [Youtube](https://youtu.be/AQODWgAuC5c).
 ### Other
-1. I also want to thank Code Institute online tutors and my mentor Spencer for the technical help and ideas.
+I also want to thank Code Institute online tutors and my mentor Spencer for the technical help and ideas.
